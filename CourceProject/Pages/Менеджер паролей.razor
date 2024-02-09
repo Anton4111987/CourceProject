@@ -21,6 +21,7 @@ else
                 <th>Пароль</th>
                 <th>Показ</th>
                 <th>Смена</th>
+                <th>Длина</th>
             </tr>
         </thead>
         <tbody>
@@ -29,8 +30,17 @@ else
                 <tr>
                     <td>@forecast.Date.ToShortDateString()</td>
                     <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
+                    <td>
+                        <button>Сменить</button>
+                    </td>
+                    <td>
+                        <select> 
+                            <option> 4</option>
+                            <option> 5</option>
+                            <option> 6</option>
+                        </select>
+                        
+                    </td>
                 </tr>
             }
         </tbody>
