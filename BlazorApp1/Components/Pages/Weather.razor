@@ -1,9 +1,9 @@
-﻿@page "/Менеджер паролей"
+﻿@page "/weather"
 @attribute [StreamRendering]
 
-<PageTitle>Password Manager</PageTitle>
+<PageTitle>Weather</PageTitle>
 
-<h1>Менеджер паролей</h1>
+<h1>Weather</h1>
 
 <p>This component demonstrates showing data.</p>
 
@@ -16,12 +16,10 @@ else
     <table class="table">
         <thead>
             <tr>
-                <th>Ресурс</th>
-                <th>Логин</th>
-                <th>Пароль</th>
-                <th>Показ</th>
-                <th>Смена</th>
-                <th>Длина</th>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
             </tr>
         </thead>
         <tbody>
@@ -30,17 +28,8 @@ else
                 <tr>
                     <td>@forecast.Date.ToShortDateString()</td>
                     <td>@forecast.TemperatureC</td>
-                    <td>
-                        <button>Сменить</button>
-                    </td>
-                    <td>
-                        <select> 
-                            <option> 4</option>
-                            <option> 5</option>
-                            <option> 6</option>
-                        </select>
-                        
-                    </td>
+                    <td>@forecast.TemperatureF</td>
+                    <td>@forecast.Summary</td>
                 </tr>
             }
         </tbody>

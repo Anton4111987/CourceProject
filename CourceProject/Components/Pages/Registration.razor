@@ -1,0 +1,48 @@
+﻿@using CourceProject.Components.Data
+@using CourceProject.Components.Models
+@using Microsoft.AspNetCore.Components.Forms
+@inject IUserRepository _listUsers
+@inject NavigationManager navigationManager;
+@page "/Registration"
+
+<h3>@_pageTitle</h3>
+
+<EditForm Model="@_user" OnValidSubmit="AddUser" FormName="user_registration">
+    <DataAnnotationsValidator />
+    <br />
+    Имя пользователя: <InputText @bind-Value="@_user.Name" />
+    <br />
+    <br />
+    Фамилия пользователя: <InputText @bind-Value="@_user.LastName" />
+    <br />
+    <br />
+    Email пользователя: <InputText @bind-Value="@_user.Email" />
+    <br />
+    <br />
+    Пароль пользователя: <InputText @bind-Value="@_user.Password" />
+    <br />
+    <ValidationSummary />
+    <br />
+    <br /> <input type="submit" value="Добавить пользователя">
+    <br />
+    
+</EditForm> 
+
+@code {
+
+    private string _pageTitle = "Регистрация нового пользователя и добавление в базу";
+    private User _user = new();
+    private async Task AddUser()
+    {
+       await _listUsers.AddUser(
+            new User
+                {
+                    Name = _user.Name,
+                    LastName = _user.LastName,
+                    Email = _user.Email,
+                    Password = _user.Password
+                });
+        _user = new();
+        navigationManager.NavigateTo("/PasswordManager");
+    }
+}

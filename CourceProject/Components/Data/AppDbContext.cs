@@ -1,13 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using CourceProject.Components.Models;
 
-namespace CourceProject.Models
+namespace CourceProject.Components.Data
 {
     public class AppDbContext : DbContext
     {
 
-        public DbSet<User> Products { get; set; }
+        public DbSet<User> Users { get; set; }
 
-        public DbSet<Account> Accountss { get; set; }
+        public DbSet<Account> Accounts { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {

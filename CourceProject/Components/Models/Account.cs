@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CourceProject.Models
+namespace CourceProject.Components.Models
 {
     public class Account
     {

@@ -1,0 +1,67 @@
+﻿@using CourceProject.Components.Data
+@using CourceProject.Components.Models
+@using Microsoft.AspNetCore.Components.Forms
+@inject IUserRepository _listUsers
+@inject Blazored.LocalStorage.ILocalStorageService localStorage;
+@inject NavigationManager navigationManager;
+@page "/Authorization"
+
+<h3>@_pageTitle</h3>
+
+<EditForm Model="@_userAuthorization" OnValidSubmit="SearchUser" FormName="user_authirization">
+    <DataAnnotationsValidator />
+    <br />
+    Имя пользователя: <InputText @bind-Value="_userAuthorization.Name" />
+    <br />
+    <br />
+    Пароль пользователя: <InputText @bind-Value="_userAuthorization.Password" />
+    <br />
+    <ValidationSummary />
+    <br />
+    <br /> <input type="submit" value="Авторизоваться">
+    <div> @_userAuthorization.Name </div>
+    <div> @error </div>
+</EditForm>
+
+@code {
+    private string _pageTitle = "Авторизация пользователя";
+    private IEnumerable<User> users=new List<User>();
+    private UserAthirization _userAuthorization = new();
+    private User _user = new();
+    private string? error;
+    protected override async void OnInitialized()
+    {
+        users = await _listUsers.GetUsers();
+    }
+
+    private async Task SearchUser()
+    {
+        if (users.Where(u => u.Name == _userAuthorization.Name && u.Password == _userAuthorization.Password)!=null)
+            error = "Данный пользователь имеется!";
+        if (_userAuthorization.Name != null && _userAuthorization.Password != null)
+        {
+            error = "";
+            _user.Name = _userAuthorization.Name;
+            _user.Password = _userAuthorization.Password;
+            
+            if (await _listUsers.GetUserByNameAndPasswordAsync(_user.Name, _user.Password) != null)
+            {
+                await SaveLocalStorage();
+                navigationManager.NavigateTo("/PasswordManager");
+            }
+            else
+            {
+                error = "Пользователя с такими именем и паролем не найдено!";
+                // User _user = new();
+            } 
+                
+        }
+        else
+            error="Не все поля заполнены корректно";
+    }
+    private async Task SaveLocalStorage()
+    {
+        await localStorage.SetItemAsync("userId", _user.Id);
+    }
+   
+}
