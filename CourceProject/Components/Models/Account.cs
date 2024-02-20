@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CourceProject.Components.Data;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace CourceProject.Components.Models
 {
@@ -15,7 +17,7 @@ namespace CourceProject.Components.Models
         [Required(ErrorMessage = "Пароль не может быть пустым")]
         public string? Password { get; set; }
 
-        public string? UserId { get; set; }
+        public int? UserId { get; set; }
 
     }
 }

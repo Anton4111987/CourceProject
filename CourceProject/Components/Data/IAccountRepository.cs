@@ -8,7 +8,5 @@ namespace CourceProject.Components.Data
         public Task UpdateAccount(Account account);
         public Task<IReadOnlyCollection<Account>> GetAccounts();
         public Task<Account?> GetAccountById(int id);
-
-
     }
 }

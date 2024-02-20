@@ -1,48 +1,83 @@
 ﻿@using CourceProject.Components.Data
 @using CourceProject.Components.Models
 @using Microsoft.AspNetCore.Components.Forms
+@using System.ComponentModel.DataAnnotations
+@using CourceProject.Components.Services
 @inject IUserRepository _listUsers
 @inject NavigationManager navigationManager;
+@inject IEncryptor passwordEncryptor;
+@inject ProtectedSessionStorage localStorage;
 @page "/Registration"
+
+@rendermode InteractiveServer
 
 <h3>@_pageTitle</h3>
 
-<EditForm Model="@_user" OnValidSubmit="AddUser" FormName="user_registration">
+<EditForm Model="@_user" OnValidSubmit="AddUser" FormName="user_registration" >
     <DataAnnotationsValidator />
     <br />
-    Имя пользователя: <InputText @bind-Value="@_user.Name" />
+    Имя пользователя: <InputText id="name" @bind-Value="@_user.Name" />
     <br />
     <br />
-    Фамилия пользователя: <InputText @bind-Value="@_user.LastName" />
+    Фамилия пользователя: <InputText id="lastname" @bind-Value="@_user.LastName" />
     <br />
     <br />
-    Email пользователя: <InputText @bind-Value="@_user.Email" />
+    Email пользователя: <InputText id="email" @bind-Value="@_user.Email" />
     <br />
     <br />
-    Пароль пользователя: <InputText @bind-Value="@_user.Password" />
+    Пароль пользователя: <InputText type="password" id="password" @bind-Value="@_user.Password" />
+    <br />
+    <br />
+    Повторите Пароль: <InputText type="password" id="repeat_password" @bind-Value="@repeatPassword.Password" />
     <br />
     <ValidationSummary />
     <br />
     <br /> <input type="submit" value="Добавить пользователя">
     <br />
-    
+    <div>@error</div>
 </EditForm> 
 
 @code {
-
     private string _pageTitle = "Регистрация нового пользователя и добавление в базу";
-    private User _user = new();
+    private string? error;
+    string? encryptedPassword;
+    private int? userId;
+    private string? userName;
+    [SupplyParameterFromForm]
+    private User _user { get; set; } = new();
+    [SupplyParameterFromForm]
+    private RepeatPassword repeatPassword { get; set; } = new();
+
     private async Task AddUser()
     {
-       await _listUsers.AddUser(
+        if (_user.Password != repeatPassword.Password)
+        {
+            error = "Пароли не совпадают";
+        }
+        else
+        {
+            error = "";
+            await _listUsers.AddUser(
             new User
-                {
-                    Name = _user.Name,
-                    LastName = _user.LastName,
-                    Email = _user.Email,
-                    Password = _user.Password
-                });
-        _user = new();
-        navigationManager.NavigateTo("/PasswordManager");
+            {
+                Name = _user.Name,
+                LastName = _user.LastName,
+                Email = _user.Email,
+                Password = passwordEncryptor.Encrypt(_user.Password)
+            });
+            var users = await _listUsers.GetUsers();
+            _user = users.LastOrDefault();
+            userId = _user.Id;
+            userName = _user.Name;
+            _user = new();
+            await SaveLocalStorage();
+            navigationManager.NavigateTo("/PasswordManager");
+        } 
+       
+    }
+    private async Task SaveLocalStorage()
+    {
+        await localStorage.SetAsync("userId", userId);
+        await localStorage.SetAsync("userName", userName);
     }
 }

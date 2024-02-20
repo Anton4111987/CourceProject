@@ -12,10 +12,12 @@ namespace CourceProject.Components.Models
         [Required(ErrorMessage = "Строка Фамилии не может быть пуста")]
         public string? LastName { get; set; }
 
-        [Required(ErrorMessage = "Строка email не может быть пуста")]
+        [Required(ErrorMessage = "Строка email не может быть пуста")] 
+        [EmailAddress]
         public string? Email { get; set; }
 
         [Required(ErrorMessage = "Пароль не может быть пустым")]
+        [StringLength(20, MinimumLength = 4)]
         public string? Password { get; set; }
 
        

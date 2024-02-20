@@ -1,14 +1,19 @@
 ﻿@using CourceProject.Components.Data
 @using CourceProject.Components.Models
+@using CourceProject.Components.Services
 @using Microsoft.AspNetCore.Components.Forms
 @inject IUserRepository _listUsers
-@inject Blazored.LocalStorage.ILocalStorageService localStorage;
+@inject ProtectedSessionStorage localStorage;
+@inject IEncryptor passwordEncryptor;
 @inject NavigationManager navigationManager;
+
 @page "/Authorization"
+
+@rendermode InteractiveServer
 
 <h3>@_pageTitle</h3>
 
-<EditForm Model="@_userAuthorization" OnValidSubmit="SearchUser" FormName="user_authirization">
+<EditForm Model="@_userAuthorization" OnValidSubmit="UserAuthorization" FormName="user_authorization">
     <DataAnnotationsValidator />
     <br />
     Имя пользователя: <InputText @bind-Value="_userAuthorization.Name" />
@@ -18,50 +23,83 @@
     <br />
     <ValidationSummary />
     <br />
-    <br /> <input type="submit" value="Авторизоваться">
-    <div> @_userAuthorization.Name </div>
+    <br /> <input type="submit" value="Авторизоваться"/>
     <div> @error </div>
 </EditForm>
 
 @code {
     private string _pageTitle = "Авторизация пользователя";
-    private IEnumerable<User> users=new List<User>();
-    private UserAthirization _userAuthorization = new();
-    private User _user = new();
+    private IEnumerable<User> users = new List<User>();
+    private User user = new();
+    private int? _userId;
+    private string? encryptedPassword;
+    private string? decryptedPassword;
+    [SupplyParameterFromForm]
+    private UserAthirization _userAuthorization { get; set; } = new();
+
     private string? error;
     protected override async void OnInitialized()
     {
         users = await _listUsers.GetUsers();
     }
 
-    private async Task SearchUser()
+    private async Task UserAuthorization()
     {
-        if (users.Where(u => u.Name == _userAuthorization.Name && u.Password == _userAuthorization.Password)!=null)
-            error = "Данный пользователь имеется!";
+        //_userAuthorization.Name="Василий";
+        //_userAuthorization.Password = "dddded";        
+       
         if (_userAuthorization.Name != null && _userAuthorization.Password != null)
         {
-            error = "";
-            _user.Name = _userAuthorization.Name;
-            _user.Password = _userAuthorization.Password;
             
-            if (await _listUsers.GetUserByNameAndPasswordAsync(_user.Name, _user.Password) != null)
+            SearchUser();
+            if(user!=null)
             {
+                error = "Данный пользователь существует в базе!";
+                _userId = user.Id;
                 await SaveLocalStorage();
                 navigationManager.NavigateTo("/PasswordManager");
             }
             else
             {
-                error = "Пользователя с такими именем и паролем не найдено!";
-                // User _user = new();
+                error = "Пользователя с такими именем и паролем не найдено!"; 
             } 
-                
         }
         else
             error="Не все поля заполнены корректно";
     }
+
     private async Task SaveLocalStorage()
     {
-        await localStorage.SetItemAsync("userId", _user.Id);
+        await localStorage.SetAsync("userId", _userId);
+        await localStorage.SetAsync("userName", _userAuthorization.Name);
     }
-   
+    private User SearchUser()
+    {
+        foreach (User userSearch in users)
+        {
+            if (userSearch.Password.Length>16)
+                decryptedPassword = passwordEncryptor.Decrypt(userSearch.Password);
+            if ( userSearch.Name == _userAuthorization.Name && userSearch.Password == _userAuthorization.Password
+            || userSearch.Name == _userAuthorization.Name && decryptedPassword == _userAuthorization.Password)
+                user = userSearch;
+        }
+        return user;
+    }
+    /*protected async override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            /*await localStorage.SetItemAsync("userId", userId);
+            await localStorage.SetItemAsync("userName", _userAuthorization.Name);
+            StateHasChanged();
+
+            await localStorage.SetAsync("userId", _userId);
+            _userId = await localStorage.GetAsync<string>("userId");
+
+            await localStorage.SetAsync("userName", _userAuthorization.Name);
+            _userAuthorization.Name = await localStorage.GetAsync<string>("userName");
+            StateHasChanged();
+        }
+
+    }*/
 }
