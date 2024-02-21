@@ -6,7 +6,8 @@
 @inject IUserRepository _listUsers
 @inject NavigationManager navigationManager;
 @inject IEncryptor passwordEncryptor;
-@inject ProtectedSessionStorage localStorage;
+@*@inject ProtectedSessionStorage localStorage;*@
+@inject Blazored.SessionStorage.ISessionStorageService localStorage;
 @page "/Registration"
 
 @rendermode InteractiveServer
@@ -73,11 +74,14 @@
             await SaveLocalStorage();
             navigationManager.NavigateTo("/PasswordManager");
         } 
-       
+
     }
     private async Task SaveLocalStorage()
     {
-        await localStorage.SetAsync("userId", userId);
-        await localStorage.SetAsync("userName", userName);
+        //await localStorage.SetAsync("userId", userId);
+        //await localStorage.SetAsync("userName", userName);
+
+        await localStorage.SetItemAsync("userId", userId);
+        await localStorage.SetItemAsync("userName", userName);
     }
 }

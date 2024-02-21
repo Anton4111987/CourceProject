@@ -3,7 +3,8 @@
 @using CourceProject.Components.Services
 @using Microsoft.AspNetCore.Components.Forms
 @inject IUserRepository _listUsers
-@inject ProtectedSessionStorage localStorage;
+@*@inject ProtectedSessionStorage localStorage;*@
+@inject Blazored.SessionStorage.ISessionStorageService localStorage;
 @inject IEncryptor passwordEncryptor;
 @inject NavigationManager navigationManager;
 
@@ -47,10 +48,10 @@
     {
         //_userAuthorization.Name="Василий";
         //_userAuthorization.Password = "dddded";        
-       
+
         if (_userAuthorization.Name != null && _userAuthorization.Password != null)
         {
-            
+
             SearchUser();
             if(user!=null)
             {
@@ -70,8 +71,11 @@
 
     private async Task SaveLocalStorage()
     {
-        await localStorage.SetAsync("userId", _userId);
-        await localStorage.SetAsync("userName", _userAuthorization.Name);
+       // await localStorage.SetItemAsync("userId", _userId);
+       // await localStorage.SetAsync("userName", _userAuthorization.Name);
+
+        await localStorage.SetItemAsync("userId", _userId);
+        await localStorage.SetItemAsync("userName", _userAuthorization.Name);
     }
     private User SearchUser()
     {

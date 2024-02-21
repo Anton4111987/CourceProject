@@ -1,7 +1,7 @@
 using CourceProject.Components;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
-using Blazored.LocalStorage;
+using Blazored.SessionStorage;
 using CourceProject.Components.Data;
 using CourceProject.Components.Services;
 using CourceProject.Components.Models;
@@ -23,7 +23,7 @@ try
     builder.Host.UseSerilog(); // <-- Add this line
     builder.Services.AddOptions<CryptoString>()
     .BindConfiguration("CryptoString");
-    builder.Services.AddBlazoredLocalStorage();
+    builder.Services.AddBlazoredSessionStorage();
     builder.Services.AddScoped<IEncryptor, PassswordEncryptor>();
     builder.Services.AddScoped<IUserRepository, InDbSQLiteListUsers>();
     builder.Services.AddScoped<IAccountRepository, InDbSQLiteListAccounts>();
