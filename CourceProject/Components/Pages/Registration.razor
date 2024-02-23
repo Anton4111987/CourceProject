@@ -6,8 +6,8 @@
 @inject IUserRepository _listUsers
 @inject NavigationManager navigationManager;
 @inject IEncryptor passwordEncryptor;
-@*@inject ProtectedSessionStorage localStorage;*@
 @inject Blazored.SessionStorage.ISessionStorageService localStorage;
+@inject IToastService toastService
 @page "/Registration"
 
 @rendermode InteractiveServer
@@ -35,15 +35,14 @@
     <br />
     <br /> <input type="submit" value="Добавить пользователя">
     <br />
-    <div>@error</div>
 </EditForm> 
 
 @code {
     private string _pageTitle = "Регистрация нового пользователя и добавление в базу";
-    private string? error;
     string? encryptedPassword;
     private int? userId;
     private string? userName;
+    private IEnumerable<User> users = new List<User>();
     [SupplyParameterFromForm]
     private User _user { get; set; } = new();
     [SupplyParameterFromForm]
@@ -51,37 +50,57 @@
 
     private async Task AddUser()
     {
-        if (_user.Password != repeatPassword.Password)
+        if (!SearchUser())
         {
-            error = "Пароли не совпадают";
+            if (_user.Password != repeatPassword.Password)
+            {
+                toastService.ShowError("Пароли не совпадают");
+            }
+            else
+            {
+                await _listUsers.AddUser(
+                new User
+                    {
+                        Name = _user.Name,
+                        LastName = _user.LastName,
+                        Email = _user.Email,
+                        Password = passwordEncryptor.Encrypt(_user.Password)
+                    });
+                toastService.ShowSuccess("Новый пользователь " + _user.Name + " успешно зарегистрирован");
+                var users = await _listUsers.GetUsers();
+                _user = users.LastOrDefault();
+                userId = _user.Id;
+                userName = _user.Name;
+                _user = new();
+                await SaveLocalStorage();
+                navigationManager.NavigateTo("/PasswordManager");
+            }
         }
         else
         {
-            error = "";
-            await _listUsers.AddUser(
-            new User
-            {
-                Name = _user.Name,
-                LastName = _user.LastName,
-                Email = _user.Email,
-                Password = passwordEncryptor.Encrypt(_user.Password)
-            });
-            var users = await _listUsers.GetUsers();
-            _user = users.LastOrDefault();
-            userId = _user.Id;
-            userName = _user.Name;
-            _user = new();
-            await SaveLocalStorage();
-            navigationManager.NavigateTo("/PasswordManager");
-        } 
-
+            toastService.ShowError("Пользователь с таким именем уже зарегистрирован в системе");
+        }
     }
     private async Task SaveLocalStorage()
     {
-        //await localStorage.SetAsync("userId", userId);
-        //await localStorage.SetAsync("userName", userName);
-
         await localStorage.SetItemAsync("userId", userId);
         await localStorage.SetItemAsync("userName", userName);
+    }
+    private bool SearchUser()
+    {
+        bool flag= false;
+        foreach (User user in users)
+        {           
+            if (user.Name == _user.Name)
+            {   
+                _user.Name = " ";
+                flag = true;
+            }
+        }
+        return flag;
+    }
+    protected override async void OnInitialized()
+    {
+        users = await _listUsers.GetUsers();
     }
 }

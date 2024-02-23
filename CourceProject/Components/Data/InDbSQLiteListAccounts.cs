@@ -32,5 +32,10 @@ namespace CourceProject.Components.Data
         {
             return await _context.Accounts.FindAsync(id);
         }
+        public void Delete(Account account)
+        {
+           _context.Accounts.Remove(account);
+            _context.SaveChanges();
+        }
     }
 }

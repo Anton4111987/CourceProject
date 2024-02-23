@@ -5,6 +5,8 @@ using Blazored.SessionStorage;
 using CourceProject.Components.Data;
 using CourceProject.Components.Services;
 using CourceProject.Components.Models;
+using Blazored.Toast;
+
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -14,9 +16,11 @@ try
 {
     Log.Information("Starting web application");
     var builder = WebApplication.CreateBuilder(args);
-    // Add services to the container.
+  
     builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+    builder.Services.AddBlazoredToast();
 
     builder.Logging.ClearProviders();
     builder.Logging.AddConsole();

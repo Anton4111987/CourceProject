@@ -36,12 +36,6 @@ namespace CourceProject.Components.Data
             return await _context.Users.FindAsync(id);
         }
 
-        public async Task<User?> GetUserByNameAndPasswordAsync(string Name, string Password)
-        {
-            return await _context.Users.FindAsync(Name, Password);
-           
-        }
-
     }
 
 }

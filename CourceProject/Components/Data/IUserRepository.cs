@@ -9,6 +9,5 @@ namespace CourceProject.Components.Data
         public Task<IReadOnlyCollection<User>> GetUsers();
         public Task<User?> GetUserById(int id);
 
-        public Task<User?> GetUserByNameAndPasswordAsync(string Name, string Password);
     }
 }
