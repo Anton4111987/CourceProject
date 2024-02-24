@@ -4,9 +4,10 @@
 @using System.ComponentModel.DataAnnotations
 @using CourceProject.Components.Services
 @inject IUserRepository _listUsers
-@inject NavigationManager navigationManager;
-@inject IEncryptor passwordEncryptor;
-@inject Blazored.SessionStorage.ISessionStorageService localStorage;
+@inject NavigationManager navigationManager
+@inject IEncryptor passwordEncryptor
+@inject Blazored.SessionStorage.ISessionStorageService localStorage
+@inject ILogger<Registration> logger
 @inject IToastService toastService
 @page "/Registration"
 
@@ -66,6 +67,7 @@
                         Email = _user.Email,
                         Password = passwordEncryptor.Encrypt(_user.Password)
                     });
+                logger.LogInformation("Зарегистрирован новый пользователь {" + _user.Name+"}");
                 toastService.ShowSuccess("Новый пользователь " + _user.Name + " успешно зарегистрирован");
                 var users = await _listUsers.GetUsers();
                 _user = users.LastOrDefault();
@@ -85,6 +87,7 @@
     {
         await localStorage.SetItemAsync("userId", userId);
         await localStorage.SetItemAsync("userName", userName);
+        logger.LogInformation("Сохранение имени и Id пользователя {" + userName+ "} в sessionStorage");
     }
     private bool SearchUser()
     {

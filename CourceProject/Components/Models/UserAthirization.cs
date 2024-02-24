@@ -4,7 +4,6 @@ namespace CourceProject.Components.Models
 {
     public class UserAthirization
     {
-        
         [Required(ErrorMessage = "Строка имени не может быть пуста")]
         public string? Name { get; set; }
 

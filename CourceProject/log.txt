@@ -1,0 +1,487 @@
+2024-02-24 14:48:31.440 +05:00 [INF] Starting web application
+2024-02-24 14:48:31.886 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-24 14:48:32.209 +05:00 [INF] Now listening on: https://localhost:7228
+2024-02-24 14:48:32.210 +05:00 [INF] Now listening on: http://localhost:5216
+2024-02-24 14:48:32.211 +05:00 [INF] Now listening on: https://192.168.1.9:80
+2024-02-24 14:48:32.219 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-24 14:48:32.221 +05:00 [INF] Hosting environment: Development
+2024-02-24 14:48:32.222 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-02-24 14:48:36.056 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-02-24 14:48:36.149 +05:00 [INF] Executing endpoint '/ (/)'
+2024-02-24 14:48:36.266 +05:00 [INF] Executed endpoint '/ (/)'
+2024-02-24 14:48:36.273 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 220.3441ms
+2024-02-24 14:48:36.306 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-02-24 14:48:36.316 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 9.4227ms
+2024-02-24 14:48:36.323 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-02-24 14:48:36.324 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-02-24 14:48:36.330 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-02-24 14:48:36.330 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-24 14:48:36.333 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-02-24 14:48:36.346 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 16.5207ms
+2024-02-24 14:48:36.347 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-02-24 14:48:36.351 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-02-24 14:48:36.353 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 28.6436ms
+2024-02-24 14:48:36.369 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.0882ms
+2024-02-24 14:48:36.377 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-02-24 14:48:36.378 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:48:36.380 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:48:36.381 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 4.1131ms
+2024-02-24 14:48:36.572 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-02-24 14:48:36.575 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:48:36.580 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:48:36.580 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 7.984ms
+2024-02-24 14:48:36.934 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=qin9iDYQ6lJDTSDdZETfPg - null null
+2024-02-24 14:48:36.937 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:48:39.403 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-02-24 14:48:45.717 +05:00 [INF] Пользователь с именем {Антон} найден в системе
+2024-02-24 14:48:45.817 +05:00 [INF] Сохранение имени и Id пользователя {Антон} в sessionStorage
+2024-02-24 14:48:45.857 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 14:49:09.890 +05:00 [INF] Переход на страницу для смены пароля пользователя Антон
+2024-02-24 14:53:48.838 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-02-24 14:53:59.498 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/Authorization - null null
+2024-02-24 14:53:59.505 +05:00 [INF] Executing endpoint '/Authorization (/Authorization)'
+2024-02-24 14:53:59.518 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-02-24 14:53:59.526 +05:00 [INF] Executed endpoint '/Authorization (/Authorization)'
+2024-02-24 14:53:59.532 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/Authorization - 200 null text/html; charset=utf-8 33.8562ms
+2024-02-24 14:54:06.922 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-02-24 14:54:06.956 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-02-24 14:54:06.961 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 14:54:28.478 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 5), @p1='?' (Size = 8), @p2='?' (Size = 11), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Accounts" SET "Login" = @p0, "Password" = @p1, "Source" = @p2, "UserId" = @p3
+WHERE "Id" = @p4
+RETURNING 1;
+2024-02-24 14:54:28.488 +05:00 [INF] Обновлены данные пароля аккаунта {тестАккаунт} пользователя {Саня}
+2024-02-24 14:54:48.865 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 10), @p1='?' (Size = 24), @p2='?' (Size = 5), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Accounts" ("Login", "Password", "Source", "UserId")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2024-02-24 14:54:48.878 +05:00 [INF] Добавлен новый аккаунт {цмцмм}
+2024-02-24 14:54:48.888 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/PasswordManager - null null
+2024-02-24 14:54:48.899 +05:00 [INF] Executing endpoint '/PasswordManager (/PasswordManager)'
+2024-02-24 14:54:48.943 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 14:54:48.946 +05:00 [INF] Executed endpoint '/PasswordManager (/PasswordManager)'
+2024-02-24 14:54:48.946 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/PasswordManager - 200 null text/html; charset=utf-8 59.0272ms
+2024-02-24 14:54:48.962 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:54:48.963 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=qin9iDYQ6lJDTSDdZETfPg - 200 null null 372028.5916ms
+2024-02-24 14:54:48.976 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryqRNTC2AR7PdVUX3W 359
+2024-02-24 14:54:48.978 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-02-24 14:54:48.979 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-24 14:54:48.980 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-02-24 14:54:48.982 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:54:48.984 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 6.167ms
+2024-02-24 14:54:48.985 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 6.3672ms
+2024-02-24 14:54:48.990 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-02-24 14:54:48.988 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-02-24 14:54:48.993 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-02-24 14:54:48.995 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-02-24 14:54:48.997 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-02-24 14:54:48.998 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 18.2563ms
+2024-02-24 14:54:49.000 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:54:49.004 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 28.2378ms
+2024-02-24 14:54:49.013 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.0844ms
+2024-02-24 14:54:49.021 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-02-24 14:54:49.023 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:54:49.023 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:54:49.024 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 3.3919ms
+2024-02-24 14:54:49.170 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-02-24 14:54:49.172 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:54:49.172 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:54:49.173 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 3.0121ms
+2024-02-24 14:54:49.451 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=U8Gnty28daZ_va2Iy1-Kaw - null null
+2024-02-24 14:54:49.453 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:54:49.938 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 14:55:18.344 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Accounts"
+WHERE "Id" = @p0
+RETURNING 1;
+2024-02-24 14:55:18.358 +05:00 [INF] Удален аккаунт {тватт}
+2024-02-24 14:55:18.388 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/PasswordManager - null null
+2024-02-24 14:55:18.403 +05:00 [INF] Executing endpoint '/PasswordManager (/PasswordManager)'
+2024-02-24 14:55:18.410 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 14:55:18.418 +05:00 [INF] Executed endpoint '/PasswordManager (/PasswordManager)'
+2024-02-24 14:55:18.423 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/PasswordManager - 200 null text/html; charset=utf-8 36.4253ms
+2024-02-24 14:55:18.446 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:55:18.453 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=U8Gnty28daZ_va2Iy1-Kaw - 200 null null 29001.8689ms
+2024-02-24 14:55:18.498 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryFCvsB4D1t9kB4z0v 359
+2024-02-24 14:55:18.501 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-24 14:55:18.502 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-02-24 14:55:18.502 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-02-24 14:55:18.506 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-02-24 14:55:18.507 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.998ms
+2024-02-24 14:55:18.514 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 12.011ms
+2024-02-24 14:55:18.515 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-02-24 14:55:18.503 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:55:18.527 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-02-24 14:55:18.527 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.272ms
+2024-02-24 14:55:18.528 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-02-24 14:55:18.531 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:55:18.534 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-02-24 14:55:18.534 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 36.0144ms
+2024-02-24 14:55:18.534 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 32.6811ms
+2024-02-24 14:55:18.546 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-02-24 14:55:18.548 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:55:18.549 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:55:18.550 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 3.354ms
+2024-02-24 14:55:18.673 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-02-24 14:55:18.675 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:55:18.677 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:55:18.678 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 5.2758ms
+2024-02-24 14:55:18.951 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=3VboOcVig7opa1rRFIEr1A - null null
+2024-02-24 14:55:18.959 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:55:19.082 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 14:56:09.730 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:56:09.779 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=3VboOcVig7opa1rRFIEr1A - 200 null null 50827.4724ms
+2024-02-24 14:56:09.940 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryAlXB5eyU8Yqr4UxJ 359
+2024-02-24 14:56:09.946 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:56:09.950 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:56:09.955 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 14.6512ms
+2024-02-24 14:58:13.799 +05:00 [INF] Starting web application
+2024-02-24 14:58:14.238 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-24 14:58:14.594 +05:00 [INF] Now listening on: https://localhost:7228
+2024-02-24 14:58:14.595 +05:00 [INF] Now listening on: http://localhost:5216
+2024-02-24 14:58:14.596 +05:00 [INF] Now listening on: https://192.168.1.9:80
+2024-02-24 14:58:14.602 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-24 14:58:14.605 +05:00 [INF] Hosting environment: Development
+2024-02-24 14:58:14.607 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-02-24 14:58:14.946 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-02-24 14:58:15.019 +05:00 [INF] Executing endpoint '/ (/)'
+2024-02-24 14:58:15.124 +05:00 [INF] Executed endpoint '/ (/)'
+2024-02-24 14:58:15.129 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 185.3137ms
+2024-02-24 14:58:15.151 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-02-24 14:58:15.151 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-02-24 14:58:15.155 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-02-24 14:58:15.157 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 5.7097ms
+2024-02-24 14:58:15.158 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-02-24 14:58:15.159 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-02-24 14:58:15.160 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-02-24 14:58:15.161 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 10.1023ms
+2024-02-24 14:58:15.161 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-24 14:58:15.161 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-02-24 14:58:15.166 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.4729ms
+2024-02-24 14:58:15.185 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.586ms
+2024-02-24 14:58:15.199 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-02-24 14:58:15.203 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:58:15.206 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:58:15.207 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 8.4971ms
+2024-02-24 14:58:15.666 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-02-24 14:58:15.669 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:58:15.675 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:58:15.676 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 10.0216ms
+2024-02-24 14:58:16.060 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=W-cI1uiZCmKu8Lc3OSvaHw - null null
+2024-02-24 14:58:16.064 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:58:17.330 +05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-02-24 14:58:22.405 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-02-24 14:58:22.504 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-02-24 14:58:22.544 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 14:59:03.168 +05:00 [INF] Starting web application
+2024-02-24 14:59:03.636 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-24 14:59:03.913 +05:00 [INF] Now listening on: https://localhost:7228
+2024-02-24 14:59:03.914 +05:00 [INF] Now listening on: http://localhost:5216
+2024-02-24 14:59:03.914 +05:00 [INF] Now listening on: https://192.168.1.9:80
+2024-02-24 14:59:03.917 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-24 14:59:03.917 +05:00 [INF] Hosting environment: Development
+2024-02-24 14:59:03.917 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-02-24 14:59:04.356 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-02-24 14:59:04.424 +05:00 [INF] Executing endpoint '/ (/)'
+2024-02-24 14:59:04.537 +05:00 [INF] Executed endpoint '/ (/)'
+2024-02-24 14:59:04.541 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 189.2117ms
+2024-02-24 14:59:04.564 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-02-24 14:59:04.564 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-02-24 14:59:04.567 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-02-24 14:59:04.569 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 4.9887ms
+2024-02-24 14:59:04.571 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-02-24 14:59:04.572 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-24 14:59:04.571 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-02-24 14:59:04.573 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-02-24 14:59:04.578 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-02-24 14:59:04.582 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 18.2155ms
+2024-02-24 14:59:04.583 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 10.9275ms
+2024-02-24 14:59:04.607 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.8376ms
+2024-02-24 14:59:04.611 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-02-24 14:59:04.613 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:59:04.615 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:59:04.616 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 5.4434ms
+2024-02-24 14:59:04.775 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-02-24 14:59:04.778 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:59:04.785 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:59:04.786 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 11.3089ms
+2024-02-24 14:59:05.095 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=uPL-Nn7mZd7xYVjvsJQPnQ - null null
+2024-02-24 14:59:05.097 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:59:05.583 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/Authorization - null null
+2024-02-24 14:59:05.588 +05:00 [INF] Executing endpoint '/Authorization (/Authorization)'
+2024-02-24 14:59:06.146 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-02-24 14:59:06.202 +05:00 [INF] Executed endpoint '/Authorization (/Authorization)'
+2024-02-24 14:59:06.218 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/Authorization - 200 null text/html; charset=utf-8 635.0551ms
+2024-02-24 14:59:06.285 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-02-24 14:59:11.595 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-02-24 14:59:11.721 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-02-24 14:59:11.775 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 14:59:21.042 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:59:21.046 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=uPL-Nn7mZd7xYVjvsJQPnQ - 200 null null 15950.8495ms
+2024-02-24 14:59:21.107 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary1UFqHPY6Yeb1Wc6I 359
+2024-02-24 14:59:21.114 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:59:21.129 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 14:59:21.130 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 23.5336ms
+2024-02-24 15:00:24.941 +05:00 [INF] Starting web application
+2024-02-24 15:00:25.053 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-24 15:00:25.184 +05:00 [INF] Now listening on: https://localhost:7228
+2024-02-24 15:00:25.187 +05:00 [INF] Now listening on: http://localhost:5216
+2024-02-24 15:00:25.187 +05:00 [INF] Now listening on: https://192.168.1.9:80
+2024-02-24 15:00:25.189 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-24 15:00:25.190 +05:00 [INF] Hosting environment: Development
+2024-02-24 15:00:25.190 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-02-24 15:00:25.557 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-02-24 15:00:25.613 +05:00 [INF] Executing endpoint '/ (/)'
+2024-02-24 15:00:25.690 +05:00 [INF] Executed endpoint '/ (/)'
+2024-02-24 15:00:25.695 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 140.3836ms
+2024-02-24 15:00:25.723 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-24 15:00:25.723 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-02-24 15:00:25.723 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-02-24 15:00:25.728 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-02-24 15:00:25.728 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.9947ms
+2024-02-24 15:00:25.731 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 8.1286ms
+2024-02-24 15:00:25.732 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-02-24 15:00:25.735 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-02-24 15:00:25.738 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-02-24 15:00:25.740 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-02-24 15:00:25.741 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 17.5293ms
+2024-02-24 15:00:25.755 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.9923ms
+2024-02-24 15:00:25.788 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-02-24 15:00:25.790 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:25.791 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:25.792 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 3.7957ms
+2024-02-24 15:00:26.233 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-02-24 15:00:26.236 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:26.241 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:26.242 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 8.741ms
+2024-02-24 15:00:26.605 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=0OJtn055em0LNwtnM_uhuw - null null
+2024-02-24 15:00:26.607 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:27.332 +05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-02-24 15:00:34.735 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryG8WAO1d9TA4VBezS 359
+2024-02-24 15:00:34.736 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:34.746 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:34.747 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 12.0068ms
+2024-02-24 15:00:34.959 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:34.963 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=0OJtn055em0LNwtnM_uhuw - 200 null null 8357.7928ms
+2024-02-24 15:00:42.806 +05:00 [INF] Starting web application
+2024-02-24 15:00:43.306 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-24 15:00:43.596 +05:00 [INF] Now listening on: https://localhost:7228
+2024-02-24 15:00:43.596 +05:00 [INF] Now listening on: http://localhost:5216
+2024-02-24 15:00:43.597 +05:00 [INF] Now listening on: https://192.168.1.9:80
+2024-02-24 15:00:43.599 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-24 15:00:43.601 +05:00 [INF] Hosting environment: Development
+2024-02-24 15:00:43.602 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-02-24 15:00:44.090 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-02-24 15:00:44.219 +05:00 [INF] Executing endpoint '/ (/)'
+2024-02-24 15:00:44.338 +05:00 [INF] Executed endpoint '/ (/)'
+2024-02-24 15:00:44.347 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 260.3133ms
+2024-02-24 15:00:44.379 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-02-24 15:00:44.379 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-02-24 15:00:44.379 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-24 15:00:44.393 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-02-24 15:00:44.393 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 15.1235ms
+2024-02-24 15:00:44.411 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-02-24 15:00:44.419 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 40.1764ms
+2024-02-24 15:00:44.421 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-02-24 15:00:44.422 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-02-24 15:00:44.433 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-02-24 15:00:44.434 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 55.2572ms
+2024-02-24 15:00:44.453 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.1107ms
+2024-02-24 15:00:44.463 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-02-24 15:00:44.467 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:44.468 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:44.469 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 5.7577ms
+2024-02-24 15:00:44.758 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-02-24 15:00:44.760 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:44.765 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:44.765 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 7.3104ms
+2024-02-24 15:00:45.134 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=pTcea7be-yy1FckDJ3M-bw - null null
+2024-02-24 15:00:45.137 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:00:46.284 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-02-24 15:00:50.551 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-02-24 15:00:50.640 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-02-24 15:00:50.722 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 15:02:02.722 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/app.css?__browserLink_refresh=561fd98eaa6e4dda92c632ab0258d578 - null null
+2024-02-24 15:02:02.743 +05:00 [INF] Sending file. Request path: '/app.css'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\wwwroot\app.css'
+2024-02-24 15:02:02.744 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/app.css?__browserLink_refresh=561fd98eaa6e4dda92c632ab0258d578 - 200 2872 text/css 23.12ms
+2024-02-24 15:02:05.159 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/PasswordManager - null null
+2024-02-24 15:02:05.168 +05:00 [INF] Executing endpoint '/PasswordManager (/PasswordManager)'
+2024-02-24 15:02:05.189 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 15:02:05.197 +05:00 [INF] Executed endpoint '/PasswordManager (/PasswordManager)'
+2024-02-24 15:02:05.203 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/PasswordManager - 200 null text/html; charset=utf-8 43.7647ms
+2024-02-24 15:02:19.931 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/app.css?__browserLink_refresh=636daf1b3d494201a53b77c11fe66db0 - null null
+2024-02-24 15:02:19.997 +05:00 [INF] Sending file. Request path: '/app.css'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\wwwroot\app.css'
+2024-02-24 15:02:20.000 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/app.css?__browserLink_refresh=636daf1b3d494201a53b77c11fe66db0 - 200 2868 text/css 69.6042ms
+2024-02-24 15:02:34.358 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/app.css?__browserLink_refresh=7d7b7fe96bd2408b8f390e66791da7aa - null null
+2024-02-24 15:02:34.375 +05:00 [INF] Sending file. Request path: '/app.css'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\wwwroot\app.css'
+2024-02-24 15:02:34.377 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/app.css?__browserLink_refresh=7d7b7fe96bd2408b8f390e66791da7aa - 200 2867 text/css 19.5731ms
+2024-02-24 15:02:52.893 +05:00 [INF] Starting web application
+2024-02-24 15:02:53.304 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-24 15:02:53.573 +05:00 [INF] Now listening on: http://localhost:5216
+2024-02-24 15:02:53.576 +05:00 [INF] Now listening on: http://192.168.1.9:80
+2024-02-24 15:02:53.579 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-24 15:02:53.580 +05:00 [INF] Hosting environment: Development
+2024-02-24 15:02:53.580 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-02-24 15:02:54.013 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-02-24 15:02:54.080 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-02-24 15:02:54.082 +05:00 [INF] Executing endpoint '/ (/)'
+2024-02-24 15:02:54.231 +05:00 [INF] Executed endpoint '/ (/)'
+2024-02-24 15:02:54.238 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 227.836ms
+2024-02-24 15:02:54.255 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - null null
+2024-02-24 15:02:54.257 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/CourceProject.styles.css - null null
+2024-02-24 15:02:54.259 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - null null
+2024-02-24 15:02:54.257 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-24 15:02:54.263 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - 404 0 null 8.036ms
+2024-02-24 15:02:54.267 +05:00 [INF] The file /CourceProject.styles.css was not modified
+2024-02-24 15:02:54.264 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-02-24 15:02:54.269 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 13.8332ms
+2024-02-24 15:02:54.255 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/app.css - null null
+2024-02-24 15:02:54.276 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-02-24 15:02:54.277 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/CourceProject.styles.css - 304 null text/css 19.6086ms
+2024-02-24 15:02:54.278 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-02-24 15:02:54.281 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-02-24 15:02:54.285 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-02-24 15:02:54.286 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - 304 null text/javascript 26.9478ms
+2024-02-24 15:02:54.286 +05:00 [INF] Sending file. Request path: '/app.css'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\wwwroot\app.css'
+2024-02-24 15:02:54.294 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/app.css - 200 2867 text/css 38.9049ms
+2024-02-24 15:02:54.310 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.8373ms
+2024-02-24 15:02:54.347 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor/initializers - null null
+2024-02-24 15:02:54.349 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:02:54.352 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:02:54.354 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_blazor/initializers - 200 null application/json; charset=utf-8 7.3504ms
+2024-02-24 15:02:54.784 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-02-24 15:02:54.788 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:02:54.796 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:02:54.796 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 12.1021ms
+2024-02-24 15:02:55.168 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor?id=TGHT2IRHlt-_7NnfmGpvRg - null null
+2024-02-24 15:02:55.170 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:03:16.883 +05:00 [INF] Request starting HTTP/1.1 GET http://192.168.1.9/PasswordManager - null null
+2024-02-24 15:03:16.935 +05:00 [INF] Executing endpoint '/PasswordManager (/PasswordManager)'
+2024-02-24 15:03:17.608 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 15:03:17.661 +05:00 [INF] Executed endpoint '/PasswordManager (/PasswordManager)'
+2024-02-24 15:03:17.667 +05:00 [INF] Request finished HTTP/1.1 GET http://192.168.1.9/PasswordManager - 200 null text/html; charset=utf-8 784.7616ms
+2024-02-24 15:03:17.818 +05:00 [INF] Request starting HTTP/1.1 GET http://192.168.1.9/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-24 15:03:17.818 +05:00 [INF] Request starting HTTP/1.1 GET http://192.168.1.9/app.css - null null
+2024-02-24 15:03:17.843 +05:00 [INF] Request starting HTTP/1.1 GET http://192.168.1.9/_framework/blazor.web.js - null null
+2024-02-24 15:03:17.899 +05:00 [INF] Request finished HTTP/1.1 GET http://192.168.1.9/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 82.5153ms
+2024-02-24 15:03:17.951 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-02-24 15:03:17.820 +05:00 [INF] Request starting HTTP/1.1 GET http://192.168.1.9/CourceProject.styles.css - null null
+2024-02-24 15:03:17.825 +05:00 [INF] Request starting HTTP/1.1 GET http://192.168.1.9/_content/Blazored.Toast/blazored-toast.css - null null
+2024-02-24 15:03:17.886 +05:00 [INF] Request starting HTTP/1.1 GET http://192.168.1.9/_vs/browserLink - null null
+2024-02-24 15:03:17.953 +05:00 [INF] Sending file. Request path: '/app.css'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\wwwroot\app.css'
+2024-02-24 15:03:17.955 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-02-24 15:03:17.956 +05:00 [INF] The file /CourceProject.styles.css was not modified
+2024-02-24 15:03:17.959 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-02-24 15:03:17.961 +05:00 [INF] Request finished HTTP/1.1 GET http://192.168.1.9/CourceProject.styles.css - 304 null text/css 142.0443ms
+2024-02-24 15:03:17.962 +05:00 [INF] Request finished HTTP/1.1 GET http://192.168.1.9/_framework/blazor.web.js - 304 null text/javascript 118.9385ms
+2024-02-24 15:03:17.957 +05:00 [INF] Request finished HTTP/1.1 GET http://192.168.1.9/_content/Blazored.Toast/blazored-toast.css - 404 0 null 135.2357ms
+2024-02-24 15:03:17.959 +05:00 [INF] Request finished HTTP/1.1 GET http://192.168.1.9/app.css - 200 2867 text/css 142.0061ms
+2024-02-24 15:03:17.972 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://192.168.1.9/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-02-24 15:03:18.178 +05:00 [INF] Request starting HTTP/1.1 GET http://192.168.1.9/_blazor/initializers - null null
+2024-02-24 15:03:18.202 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:03:18.232 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:03:18.234 +05:00 [INF] Request finished HTTP/1.1 GET http://192.168.1.9/_blazor/initializers - 200 null application/json; charset=utf-8 56.7142ms
+2024-02-24 15:03:18.269 +05:00 [INF] Request starting HTTP/1.1 POST http://192.168.1.9/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-02-24 15:03:18.273 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:03:18.273 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:03:18.274 +05:00 [INF] Request finished HTTP/1.1 POST http://192.168.1.9/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 4.8406ms
+2024-02-24 15:03:18.338 +05:00 [INF] Request finished HTTP/1.1 GET http://192.168.1.9/_vs/browserLink - 200 null text/javascript; charset=UTF-8 451.7313ms
+2024-02-24 15:03:18.427 +05:00 [INF] Request starting HTTP/1.1 GET http://192.168.1.9/_blazor?id=s2xu_Qct3PXYGJqjGAUA4g - null null
+2024-02-24 15:03:18.458 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:03:18.829 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 15:03:19.113 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-02-24 15:03:30.549 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-02-24 15:03:30.716 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-02-24 15:03:30.743 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 15:10:01.416 +05:00 [INF] Starting web application
+2024-02-24 15:10:01.853 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-24 15:10:02.186 +05:00 [INF] Now listening on: https://localhost:7228
+2024-02-24 15:10:02.187 +05:00 [INF] Now listening on: http://localhost:5216
+2024-02-24 15:10:02.187 +05:00 [INF] Now listening on: https://192.168.1.9:80
+2024-02-24 15:10:02.190 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-24 15:10:02.191 +05:00 [INF] Hosting environment: Development
+2024-02-24 15:10:02.192 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-02-24 15:10:05.291 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-02-24 15:10:05.409 +05:00 [INF] Executing endpoint '/ (/)'
+2024-02-24 15:10:05.508 +05:00 [INF] Executed endpoint '/ (/)'
+2024-02-24 15:10:05.518 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 228.7024ms
+2024-02-24 15:10:05.540 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-02-24 15:10:05.540 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-02-24 15:10:05.545 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-02-24 15:10:05.547 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 7.1383ms
+2024-02-24 15:10:05.552 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-02-24 15:10:05.553 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-02-24 15:10:05.555 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-02-24 15:10:05.558 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 17.2882ms
+2024-02-24 15:10:05.567 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-02-24 15:10:05.567 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-02-24 15:10:05.574 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 7.5752ms
+2024-02-24 15:10:05.605 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.6726ms
+2024-02-24 15:10:05.614 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-02-24 15:10:05.616 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:10:05.618 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:10:05.618 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 5.0278ms
+2024-02-24 15:10:05.827 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-02-24 15:10:05.829 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:10:05.833 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:10:05.834 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 6.7327ms
+2024-02-24 15:10:06.165 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=cX9ZbGth1qub829HkHaKnQ - null null
+2024-02-24 15:10:06.170 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:10:07.798 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-02-24 15:10:12.959 +05:00 [INF] Пользователь с именем {Антон} найден в системе
+2024-02-24 15:10:13.072 +05:00 [INF] Сохранение имени и Id пользователя {Антон} в sessionStorage
+2024-02-24 15:10:13.134 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-02-24 15:10:16.891 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:10:16.906 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=cX9ZbGth1qub829HkHaKnQ - 200 null null 10740.5659ms
+2024-02-24 15:10:16.973 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundarymJb8IHJPYejuVlxz 359
+2024-02-24 15:10:16.980 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:10:16.997 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-02-24 15:10:16.999 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 26.6372ms

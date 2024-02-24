@@ -15,7 +15,5 @@ namespace CourceProject.Components.Data
             //Database.EnsureCreated();
         }
 
-
-
     }
 }

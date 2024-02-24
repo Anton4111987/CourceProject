@@ -9,7 +9,6 @@ namespace CourceProject.Components.Data
     {
         private readonly AppDbContext _context;
 
-
         public InDbSQLiteListUsers(AppDbContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
@@ -35,7 +34,5 @@ namespace CourceProject.Components.Data
         {
             return await _context.Users.FindAsync(id);
         }
-
     }
-
 }

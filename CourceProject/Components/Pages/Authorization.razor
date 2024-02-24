@@ -7,10 +7,9 @@
 @inject Blazored.SessionStorage.ISessionStorageService localStorage;
 @inject IEncryptor passwordEncryptor;
 @inject NavigationManager navigationManager;
-@*@inject BlazoredToastService toastService*@
 @inject IToastService toastService
+@inject ILogger<Authorization> logger
 @page "/Authorization"
-
 
 @rendermode InteractiveServer
 
@@ -30,33 +29,29 @@
     <br /> <input type="submit" value="Авторизоваться"/>
 </EditForm>
 
-
-
 @code {
     private string _pageTitle = "Авторизация пользователя";
     private IEnumerable<User> users = new List<User>();
-    private User user;
+    private User? user;
     private int? _userId;
     private string? encryptedPassword;
     private string? decryptedPassword;
     [SupplyParameterFromForm]
     private UserAthirization _userAuthorization { get; set; } = new();
-    // [Inject] protected ToastService? toastService { get; set; }
     protected override async void OnInitialized()
     {
         users = await _listUsers.GetUsers();
     }
-
     private async Task UserAuthorization()
     {
         if (_userAuthorization.Name != null && _userAuthorization.Password != null)
         {
-            //SearchUser();
             if (SearchUser())
             {
                 _userId = user.Id;
                 toastService.ShowSuccess("Вы успешно авторизовались под пользователем " + _userAuthorization.Name);
                 await SaveLocalStorage();
+                logger.LogInformation("Сохранение имени и Id пользователя {" + _userAuthorization.Name + "} в sessionStorage");
                 navigationManager.NavigateTo("/PasswordManager");
             }
             else
@@ -87,11 +82,10 @@
                 user = new();                
                 user = userSearch;
                 toastService.ShowInfo("Пользователь с таким именем и паролем найден в системе");
+                logger.LogInformation("Пользователь с именем {" +userSearch.Name + "} найден в системе");
                 flag = true;
             }
-            
         }
         return flag;
     }
-    
 }

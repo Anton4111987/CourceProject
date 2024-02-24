@@ -20,7 +20,5 @@ namespace CourceProject.Components.Models
         [StringLength(20, MinimumLength = 4)]
         public string? Password { get; set; }
 
-       
-
     }
 }
