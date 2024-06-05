@@ -13,20 +13,26 @@
 
 @rendermode InteractiveServer
 
-<h3>@_pageTitle</h3>
+<h1>@_pageTitle</h1>
 
 
-<EditForm Model="@_userAuthorization" OnValidSubmit="UserAuthorization" FormName="user_authorization">
+<EditForm Model="@_userAuthorization" OnValidSubmit="UserAuthorization" FormName="user_authorization" >
     <DataAnnotationsValidator />
     <br />
-    Имя пользователя: <InputText @bind-Value="_userAuthorization.Name" />
+    <div>
+        <b style="color:blueviolet; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Имя пользователя: </b>
+        <InputText @bind-Value="_userAuthorization.Name" />
+    </div>    
     <br />
-    <br />
-    Пароль пользователя: <InputText type="password" @bind-Value="_userAuthorization.Password" />
+    <div>
+        <b style="color:blueviolet; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Пароль пользователя:  </b>
+        <InputText type="password" @bind-Value="_userAuthorization.Password" />
+    </div>    
     <br />
     <ValidationSummary />
     <br />
-    <br /> <input type="submit" value="Авторизоваться"/>
+    <input class=" btn btn-primary" type="submit" value="Авторизоваться" />
+    
 </EditForm>
 
 @code {
@@ -42,6 +48,7 @@
     {
         users = await _listUsers.GetUsers();
     }
+    
     private async Task UserAuthorization()
     {
         if (_userAuthorization.Name != null && _userAuthorization.Password != null)

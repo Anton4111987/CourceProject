@@ -10,6 +10,8 @@ namespace CourceProject.Components.Data
 
         public DbSet<Account> Accounts { get; set; }
 
+        public DbSet<Confidant> Confidants { get; set; }
+
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
             //Database.EnsureCreated();
