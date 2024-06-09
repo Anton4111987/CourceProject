@@ -38,9 +38,8 @@ namespace CourceProject.Components.Models
         /// номер сотового телефона
         /// </summary>
         [Required(ErrorMessage = "Номер не может быть пустым")]
-        [Phone(ErrorMessage = "Некорректный номер телефона")] 
         [StringLength(12, MinimumLength = 6)]
-        public long? Number { get; set; }
+        public string? Number { get; set; }
 
         public int? UserId { get; set; }
 
