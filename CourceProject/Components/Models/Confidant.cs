@@ -8,12 +8,6 @@ namespace CourceProject.Components.Models
     public class Confidant
     {
         public int Id { get; set; }
-        /// <summary>
-        /// Имя 
-        /// </summary>
-        [Required(ErrorMessage = "Строка имени не может быть пуста")]
-        public string? Name { get; set; }
-
 
         /// <summary>
         /// Фамилия
@@ -22,11 +16,16 @@ namespace CourceProject.Components.Models
         public string? LastName { get; set; }
 
         /// <summary>
+        /// Имя 
+        /// </summary>
+        [Required(ErrorMessage = "Строка имени не может быть пуста")]
+        public string? Name { get; set; }
+
+        /// <summary>
         /// Отчество
         /// </summary>
         [Required(ErrorMessage = "Строка Отчества не может быть пуста")]
         public string? SurName { get; set; }
-
 
         /// <summary>
         /// email адрес
@@ -38,7 +37,8 @@ namespace CourceProject.Components.Models
         /// <summary>
         /// номер сотового телефона
         /// </summary>
-        [Required(ErrorMessage = "Пароль не может быть пустым")]
+        [Required(ErrorMessage = "Номер не может быть пустым")]
+        [Phone(ErrorMessage = "Некорректный номер телефона")] 
         [StringLength(12, MinimumLength = 6)]
         public long? Number { get; set; }
 

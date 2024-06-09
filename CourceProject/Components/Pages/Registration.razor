@@ -65,12 +65,12 @@
                         Name = _user.Name,
                         LastName = _user.LastName,
                         Email = _user.Email,
-                        Password = passwordEncryptor.Encrypt(_user.Password)
+                        Password = passwordEncryptor.Encrypt(_user.Password!)
                     });
                 logger.LogInformation("Зарегистрирован новый пользователь {" + _user.Name+"}");
                 toastService.ShowSuccess("Новый пользователь " + _user.Name + " успешно зарегистрирован");
                 var users = await _listUsers.GetUsers();
-                _user = users.LastOrDefault();
+                _user = users.LastOrDefault()!;
                 userId = _user.Id;
                 userName = _user.Name;
                 _user = new();

@@ -28,6 +28,7 @@ try
     builder.Services.AddScoped<IEncryptor, PassswordEncryptor>();
     builder.Services.AddScoped<IUserRepository, InDbSQLiteListUsers>();
     builder.Services.AddScoped<IAccountRepository, InDbSQLiteListAccounts>();
+    builder.Services.AddScoped<IConfidantRepository, InDbSQLiteListConfidants>();
     builder.Services.AddDbContext<AppDbContext>(options =>
     {
         options.UseSqlite(builder.Configuration.GetConnectionString("AppDb"));

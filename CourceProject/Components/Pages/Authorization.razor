@@ -40,7 +40,6 @@
     private IEnumerable<User> users = new List<User>();
     private User? user;
     private int? _userId;
-    private string? encryptedPassword;
     private string? decryptedPassword;
     [SupplyParameterFromForm]
     private UserAthirization _userAuthorization { get; set; } = new();
@@ -48,14 +47,16 @@
     {
         users = await _listUsers.GetUsers();
     }
-    
+
     private async Task UserAuthorization()
     {
         if (_userAuthorization.Name != null && _userAuthorization.Password != null)
         {
             if (SearchUser())
             {
-                _userId = user.Id;
+                _userId = user!.Id;
+                user.LastLoginDate = DateTime.Now;
+                await _listUsers.UpdateUser(user);
                 toastService.ShowSuccess("Вы успешно авторизовались под пользователем " + _userAuthorization.Name);
                 await SaveLocalStorage();
                 logger.LogInformation("Сохранение имени и Id пользователя {" + _userAuthorization.Name + "} в sessionStorage");
@@ -78,10 +79,12 @@
     }
     private bool SearchUser()
     {
+        _userAuthorization.Name = _userAuthorization.Name!.Trim();
+        _userAuthorization.Password = _userAuthorization.Password!.Trim();
         bool flag = false;
         foreach (User userSearch in users)
         {
-            if (userSearch.Password.Length>16)
+            if (userSearch.Password!.Length>16)
                 decryptedPassword = passwordEncryptor.Decrypt(userSearch.Password);
             if (userSearch.Name == _userAuthorization.Name && userSearch.Password == _userAuthorization.Password
             || userSearch.Name == _userAuthorization.Name && decryptedPassword == _userAuthorization.Password)

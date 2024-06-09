@@ -1,0 +1,177 @@
+﻿@using CourceProject.Components.Data
+@using CourceProject.Components.Models
+
+@inject IUserRepository _listUsers
+
+@inject IConfidantRepository _listConfidants
+@inject Blazored.SessionStorage.ISessionStorageService localStorage
+
+@inject NavigationManager navigationManager
+
+@inject IToastService toastService
+@inject ILogger<Confidant> logger
+@page "/Confidant"
+
+@rendermode InteractiveServer
+
+<h3>Confidant</h3>
+<p> Список доверенных лиц </p>
+
+@if (isConnected)
+{
+    if(_userId==0)
+    {
+        toastService.ShowError("Пожалуйста авторизуйтесь!");
+        navigationManager.NavigateTo("/Authorization");
+    }
+    else
+    {
+        <p>@_pageTitle - "@_nameUser"</p>
+        <p>userId - "@_userId" </p>
+        <h1>Список доверенных лиц</h1>
+        <br />
+        <button class="btn btn-3" id="exit" @onclick="Exit">Выйти</button>
+        <br />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Фамилия</th>
+                    <th>Имя</th>
+                    <th>Отчество</th>
+                    <th>Email адрес</th>
+                    <th>Номер телефона</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Confidant conf in confidants!)
+                {
+                    <tr>
+                        <td>@conf.LastName</td>
+                        <td>@conf.Name</td>
+                        <td>@conf.SurName</td>
+                        <td>@conf.Email</td>
+                        <td>@conf.Number</td>
+                        <td>
+                            <Button Color="Color.Danger" class="btn btn-2" id="delete" @onclick="(()=>DeleteConfidant(conf))">Удалить</Button>
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td>
+                        <InputText @bind-Value=@_newConfidant.LastName Placeholder="Введите Фамилию" />
+                    </td>
+                    <td>
+                        <InputText @bind-Value=@_newConfidant.Name Placeholder="Введите Имя" />
+                    </td>
+                    <td>
+                        <InputText @bind-Value=@_newConfidant.SurName Placeholder="Введите Отчество" />
+                    </td>
+                    <td>
+                        <InputText @bind-Value=@_newConfidant.Email Placeholder="Введите Email" />
+                    </td>
+                    <td>
+                        <InputText  @bind-Value=@_newConfidant.Number Placeholder="Введите номер" />
+                       
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <br />
+        <button class="btn btn-primary" id="add" @onclick="AddConfidant">Добавить новое доверенное лицо</button>
+    }
+
+    
+}
+
+@code 
+{
+    private string _pageTitle = "Вы вошли под пользователем ";
+    private int? _userId;
+    private string? _nameUser;
+    private IEnumerable<Confidant> confidants=new List<Confidant>();
+    private Confidant _newConfidant = new();
+    private int selectedNumber;
+    private bool isConnected;
+    private bool checkedValue;
+    protected override async Task OnInitializedAsync()
+    {
+        // confidants = await _listConfidants.GetConfidants();
+        //confidants = confidants.Where(c => c.UserId == _userId);
+    }
+
+    private async void Change(Confidant confidant, int selectedNumber)
+    {
+        await _listConfidants.UpdateConfidant(confidant);
+        logger.LogInformation("Обновлены данные доверенного лица {" + confidant.Name + " " + confidant.SurName + " " + confidant.LastName + "}");
+        toastService.ShowInfo("Обновлены данные доверенного лица {" + confidant.Name + " " + confidant.SurName + " " + confidant.LastName + "}");
+    }
+
+    private async Task ReadLocalStorage()
+    {
+        _nameUser = await localStorage.GetItemAsync<string>("userName");
+        _userId = await localStorage.GetItemAsync<int>("userId");
+    }
+
+    protected async override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            isConnected = true;
+            await ReadLocalStorage();
+            StateHasChanged();
+        }
+    }
+
+    private async void AddConfidant()
+    {
+        if (_newConfidant.Name != null && _newConfidant.LastName != null && _newConfidant.SurName != null && _newConfidant.Email != null && _newConfidant.Number!=null)
+        {
+            _newConfidant = new()
+            {
+                Name = _newConfidant.Name,
+                LastName = _newConfidant.LastName,
+                SurName = _newConfidant.SurName,
+                Email = _newConfidant.Email,
+                Number = _newConfidant.Number,
+                UserId = _userId
+            };
+        
+            await _listConfidants.AddConfidant(_newConfidant);
+            logger.LogInformation("Добавлено новое доверенное лицо {" + _newConfidant.LastName + " " + _newConfidant.Name + " " + _newConfidant.SurName + " у пользователя " + _nameUser + "  с id=" + _userId +"}");
+            navigationManager.NavigateTo("/Confidant", true);
+            toastService.ShowSuccess("Добавлено новое доверенное лицо {" + _newConfidant.LastName + " " + _newConfidant.Name + " " + _newConfidant.SurName + "}");
+            _newConfidant = new();
+        }
+        else
+            toastService.ShowError("Не все поля заполнены корректно");
+    }
+
+    private void DeleteConfidant(Confidant confidant)
+    {
+        _listConfidants.Delete(confidant);
+        logger.LogInformation("Удалено доверенное лицо {" + confidant.LastName + " " + confidant.Name + " " + confidant.SurName + "}");
+        navigationManager.NavigateTo("/PasswordManager", true);
+    }
+
+    private async void Exit()
+    {
+        navigationManager.NavigateTo("/Authorization");
+        logger.LogInformation("Выход пользователя {" + _nameUser + "} из приложения!");
+        await localStorage.ClearAsync();
+        logger.LogInformation("Очистка sessionStorage!");
+        toastService.ShowInfo("Смена пользователя");
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

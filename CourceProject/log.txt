@@ -2461,3 +2461,1064 @@ FROM "Users" AS "u"
 2024-06-03 21:42:20.405 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 SELECT "u"."Id", "u"."Email", "u"."LastName", "u"."Name", "u"."Password"
 FROM "Users" AS "u"
+2024-06-09 19:48:06.872 +05:00 [INF] Starting web application
+2024-06-09 19:48:08.623 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 19:48:09.325 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 19:48:09.325 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 19:48:09.326 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 19:48:09.328 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 19:48:09.329 +05:00 [INF] Hosting environment: Development
+2024-06-09 19:48:09.330 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 19:48:09.566 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 19:48:09.678 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 19:48:09.814 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 19:48:09.819 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 256.1729ms
+2024-06-09 19:48:09.876 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 19:48:09.877 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 19:48:09.884 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 19:48:09.877 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 19:48:09.889 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 12.2476ms
+2024-06-09 19:48:09.889 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 12.5611ms
+2024-06-09 19:48:09.901 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 19:48:09.878 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 19:48:09.901 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 25.0062ms
+2024-06-09 19:48:09.910 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 19:48:09.911 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 19:48:09.915 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 19:48:09.922 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 19:48:09.923 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 46.1553ms
+2024-06-09 19:48:09.941 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.1503ms
+2024-06-09 19:48:09.962 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 19:48:09.966 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:48:09.968 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:48:09.970 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 7.5531ms
+2024-06-09 19:48:11.622 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 19:48:11.625 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:48:11.634 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:48:11.635 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 13.2533ms
+2024-06-09 19:48:11.880 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=MUhecW0_0OKOSF4e6sFIsQ - null null
+2024-06-09 19:48:11.881 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:48:16.600 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:48:25.214 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-06-09 19:48:25.262 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 13), @p1='?' (DbType = DateTime), @p2='?' (Size = 8), @p3='?' (Size = 4), @p4='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "Email" = @p0, "LastLoginDate" = @p1, "LastName" = @p2, "Name" = @p3, "Password" = @p4
+WHERE "Id" = @p5
+RETURNING 1;
+2024-06-09 19:48:25.307 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-06-09 19:48:25.323 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:49:26.082 +05:00 [INF] Выход пользователя {Саня} из приложения!
+2024-06-09 19:49:26.091 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:49:26.098 +05:00 [INF] Очистка sessionStorage!
+2024-06-09 19:49:30.051 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:49:30.067 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:49:32.011 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:49:32.033 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:49:33.539 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:49:33.559 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:49:36.301 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:49:36.317 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:49:38.323 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:49:38.339 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:49:43.025 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:49:43.038 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:49:53.525 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:49:53.527 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=MUhecW0_0OKOSF4e6sFIsQ - 200 null null 101647.2961ms
+2024-06-09 19:49:53.548 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryEBwkg9kiUMg53O1F 359
+2024-06-09 19:49:53.550 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:49:53.561 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:49:53.562 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 13.9519ms
+2024-06-09 19:50:24.927 +05:00 [INF] Starting web application
+2024-06-09 19:50:25.342 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 19:50:25.598 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 19:50:25.599 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 19:50:25.600 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 19:50:25.604 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 19:50:25.604 +05:00 [INF] Hosting environment: Development
+2024-06-09 19:50:25.605 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 19:50:28.454 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 19:50:28.518 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 19:50:28.610 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 19:50:28.615 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 163.4397ms
+2024-06-09 19:50:28.669 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 19:50:28.670 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 19:50:28.677 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 19:50:28.669 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 19:50:28.669 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 19:50:28.684 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 15.1751ms
+2024-06-09 19:50:28.692 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 19:50:28.691 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 22.7275ms
+2024-06-09 19:50:28.697 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 19:50:28.669 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 19:50:28.698 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 19:50:28.699 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 19:50:28.703 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 34.8704ms
+2024-06-09 19:50:28.706 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 36.5401ms
+2024-06-09 19:50:28.718 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.1899ms
+2024-06-09 19:50:28.752 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 19:50:28.756 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:50:28.759 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:50:28.760 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 7.9378ms
+2024-06-09 19:50:30.057 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 19:50:30.060 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:50:30.067 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:50:30.068 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 11.0216ms
+2024-06-09 19:50:30.278 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=vGIMdN0c5Lu9kATkRZQDxA - null null
+2024-06-09 19:50:30.280 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:50:30.763 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/PasswordManager - null null
+2024-06-09 19:50:30.783 +05:00 [INF] Executing endpoint '/PasswordManager (/PasswordManager)'
+2024-06-09 19:50:31.115 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:50:31.115 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:50:31.157 +05:00 [INF] Executed endpoint '/PasswordManager (/PasswordManager)'
+2024-06-09 19:50:31.165 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/PasswordManager - 200 null text/html; charset=utf-8 402.9061ms
+2024-06-09 19:50:31.216 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:50:38.881 +05:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-06-09 19:50:38.957 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-06-09 19:54:42.554 +05:00 [INF] Starting web application
+2024-06-09 19:54:43.038 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 19:54:43.295 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 19:54:43.296 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 19:54:43.297 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 19:54:43.299 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 19:54:43.300 +05:00 [INF] Hosting environment: Development
+2024-06-09 19:54:43.300 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 19:54:43.631 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 19:54:43.698 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 19:54:43.789 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 19:54:43.795 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 167.4524ms
+2024-06-09 19:54:43.849 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 19:54:43.849 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 19:54:43.853 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 19:54:43.850 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 19:54:43.860 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 11.3366ms
+2024-06-09 19:54:43.850 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 19:54:43.871 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 19:54:43.871 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 19:54:43.849 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 19:54:43.874 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 19:54:43.872 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 22.104ms
+2024-06-09 19:54:43.876 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 27.7008ms
+2024-06-09 19:54:43.877 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 27.9516ms
+2024-06-09 19:54:43.882 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 19:54:43.897 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.1198ms
+2024-06-09 19:54:43.936 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 19:54:43.938 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:54:43.941 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:54:43.942 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 5.8375ms
+2024-06-09 19:56:46.117 +05:00 [INF] Starting web application
+2024-06-09 19:56:46.616 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 19:56:46.896 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 19:56:46.897 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 19:56:46.897 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 19:56:46.900 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 19:56:46.900 +05:00 [INF] Hosting environment: Development
+2024-06-09 19:56:46.901 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 19:56:47.221 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 19:56:47.299 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 19:56:47.396 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 19:56:47.401 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 183.9722ms
+2024-06-09 19:56:47.453 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 19:56:47.453 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 19:56:47.453 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 19:56:47.457 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 19:56:47.470 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 17.27ms
+2024-06-09 19:56:47.466 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 19:56:47.453 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 19:56:47.466 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 13.1057ms
+2024-06-09 19:56:47.474 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 21.3489ms
+2024-06-09 19:56:47.477 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 19:56:47.486 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 19:56:47.480 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 19:56:47.492 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 19:56:47.493 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 40.1375ms
+2024-06-09 19:56:47.508 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.3104ms
+2024-06-09 19:56:47.554 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 19:56:47.557 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:56:47.560 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:56:47.561 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 7.8897ms
+2024-06-09 19:56:48.262 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 19:56:48.265 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:56:48.269 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:56:48.270 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 7.8685ms
+2024-06-09 19:56:48.534 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=UFrFMfEKiuaEGk0khd9Q7A - null null
+2024-06-09 19:56:48.537 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:57:06.180 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:57:25.539 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-06-09 19:57:25.589 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 13), @p1='?' (DbType = DateTime), @p2='?' (Size = 8), @p3='?' (Size = 4), @p4='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "Email" = @p0, "LastLoginDate" = @p1, "LastName" = @p2, "Name" = @p3, "Password" = @p4
+WHERE "Id" = @p5
+RETURNING 1;
+2024-06-09 19:57:25.616 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-06-09 19:57:25.631 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:57:59.913 +05:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-06-09 19:57:59.938 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-06-09 19:58:28.296 +05:00 [INF] Starting web application
+2024-06-09 19:58:28.672 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 19:58:28.966 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 19:58:28.967 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 19:58:28.967 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 19:58:28.970 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 19:58:28.971 +05:00 [INF] Hosting environment: Development
+2024-06-09 19:58:28.971 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 19:58:31.655 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 19:58:31.722 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 19:58:31.813 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 19:58:31.817 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 164.9801ms
+2024-06-09 19:58:31.848 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 19:58:31.848 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 19:58:31.852 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 19:58:31.848 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 19:58:31.861 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 19:58:31.865 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 16.8936ms
+2024-06-09 19:58:31.861 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 13.4242ms
+2024-06-09 19:58:31.848 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 19:58:31.870 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 22.6907ms
+2024-06-09 19:58:31.872 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 19:58:31.873 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 19:58:31.877 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 19:58:31.882 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 19:58:31.884 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 36.8962ms
+2024-06-09 19:58:31.899 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.5245ms
+2024-06-09 19:58:31.921 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 19:58:31.923 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:58:31.925 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:58:31.926 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 5.5821ms
+2024-06-09 19:58:32.510 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 19:58:32.512 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:58:32.517 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:58:32.518 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 8.4991ms
+2024-06-09 19:58:32.771 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=2P6gt0aJQeMRV4Qyvqf_LA - null null
+2024-06-09 19:58:32.773 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 19:58:34.396 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:59:24.153 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 15), @p1='?' (DbType = DateTime), @p2='?' (Size = 7), @p3='?' (Size = 5), @p4='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Email", "LastLoginDate", "LastName", "Name", "Password")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id";
+2024-06-09 19:59:24.168 +05:00 [INF] Зарегистрирован новый пользователь {Федор}
+2024-06-09 19:59:24.171 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 19:59:24.205 +05:00 [INF] Сохранение имени и Id пользователя {Федор} в sessionStorage
+2024-06-09 19:59:24.227 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 19:59:56.983 +05:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-06-09 19:59:57.003 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-06-09 20:21:23.564 +05:00 [INF] Starting web application
+2024-06-09 20:21:24.214 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 20:21:24.605 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 20:21:24.606 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 20:21:24.606 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 20:21:24.610 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 20:21:24.611 +05:00 [INF] Hosting environment: Development
+2024-06-09 20:21:24.612 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 20:21:24.853 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 20:21:24.933 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 20:21:25.051 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 20:21:25.058 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 207.8978ms
+2024-06-09 20:21:25.116 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 20:21:25.118 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 20:21:25.118 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 20:21:25.122 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 20:21:25.116 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 20:21:25.135 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 18.2497ms
+2024-06-09 20:21:25.137 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 21.2694ms
+2024-06-09 20:21:25.148 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 20:21:25.139 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 20:21:25.132 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 17.1437ms
+2024-06-09 20:21:25.150 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 20:21:25.155 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 20:21:25.157 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 20:21:25.158 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 43.1782ms
+2024-06-09 20:21:25.168 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.3627ms
+2024-06-09 20:21:25.200 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 20:21:25.204 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:21:25.208 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:21:25.209 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 9.5153ms
+2024-06-09 20:21:25.968 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 20:21:25.972 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:21:25.980 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:21:25.981 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 13.4253ms
+2024-06-09 20:21:27.293 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=0tO_v0x_EUb5cP4OfxDzaQ - null null
+2024-06-09 20:21:27.295 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:21:53.271 +05:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-06-09 20:21:53.307 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-06-09 20:21:53.366 +05:00 [WRN] Unhandled exception rendering component: SQLite Error 1: 'no such table: Confidants'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CourceProject.Components.Data.InDbSQLiteListConfidants.GetConfidants() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Data\InDbSQLiteListConfidants.cs:line 28
+   at CourceProject.Components.Pages.Proxies.OnInitializedAsync() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Pages\Proxies.razor:line 100
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+2024-06-09 20:21:53.385 +05:00 [ERR] Unhandled exception in circuit 'v2V-_99Q3vD-xRIyspUa225lZrdiDz6ov5zYjgS8ANg'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CourceProject.Components.Data.InDbSQLiteListConfidants.GetConfidants() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Data\InDbSQLiteListConfidants.cs:line 28
+   at CourceProject.Components.Pages.Proxies.OnInitializedAsync() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Pages\Proxies.razor:line 100
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+2024-06-09 20:21:53.397 +05:00 [WRN] Unhandled exception rendering component: Cannot access a disposed object.
+System.ObjectDisposedException: Cannot access a disposed object.
+   at Microsoft.AspNetCore.Components.RenderTree.ArrayBuilder`1.GrowBuffer(Int32 desiredCapacity)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.ComputeDiff(Renderer renderer, RenderBatchBuilder batchBuilder, Int32 componentId, ArrayRange`1 oldTree, ArrayRange`1 newTree)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+2024-06-09 20:21:53.402 +05:00 [ERR] Unhandled exception in circuit 'v2V-_99Q3vD-xRIyspUa225lZrdiDz6ov5zYjgS8ANg'.
+System.ObjectDisposedException: Cannot access a disposed object.
+   at Microsoft.AspNetCore.Components.RenderTree.ArrayBuilder`1.GrowBuffer(Int32 desiredCapacity)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.ComputeDiff(Renderer renderer, RenderBatchBuilder batchBuilder, Int32 componentId, ArrayRange`1 oldTree, ArrayRange`1 newTree)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+2024-06-09 20:21:53.410 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:21:53.421 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=0tO_v0x_EUb5cP4OfxDzaQ - 200 null null 26128.1723ms
+2024-06-09 20:21:53.426 +05:00 [INF] Connection id "0HN48IV9KKOIO", Request id "0HN48IV9KKOIO:00000011": the application completed without reading the entire request body.
+2024-06-09 20:22:15.178 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryc4gJHYUP5yS9PhPH 359
+2024-06-09 20:22:15.182 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:22:15.193 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:22:15.194 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 16.7058ms
+2024-06-09 20:22:31.658 +05:00 [INF] Starting web application
+2024-06-09 20:22:32.266 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 20:22:32.572 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 20:22:32.572 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 20:22:32.573 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 20:22:32.576 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 20:22:32.603 +05:00 [INF] Hosting environment: Development
+2024-06-09 20:22:32.624 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 20:22:35.330 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 20:22:35.407 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 20:22:35.504 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 20:22:35.508 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 182.393ms
+2024-06-09 20:22:35.554 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 20:22:35.554 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 20:22:35.554 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 20:22:35.558 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 20:22:35.570 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 16.1617ms
+2024-06-09 20:22:35.566 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 20:22:35.554 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 20:22:35.566 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 11.7487ms
+2024-06-09 20:22:35.574 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 19.3225ms
+2024-06-09 20:22:35.576 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 20:22:35.584 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 20:22:35.578 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 20:22:35.587 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 20:22:35.588 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 34.0295ms
+2024-06-09 20:22:35.601 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.0173ms
+2024-06-09 20:22:35.630 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 20:22:35.634 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:22:35.636 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:22:35.637 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 6.4697ms
+2024-06-09 20:22:36.254 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 20:22:36.256 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:22:36.261 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:22:36.262 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 8.9914ms
+2024-06-09 20:22:36.562 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=55VQQg78kpDki-HVO_4AHg - null null
+2024-06-09 20:22:36.564 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:22:36.744 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/Authorization - null null
+2024-06-09 20:22:36.749 +05:00 [INF] Executing endpoint '/Authorization (/Authorization)'
+2024-06-09 20:22:37.299 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 20:22:37.373 +05:00 [INF] Executed endpoint '/Authorization (/Authorization)'
+2024-06-09 20:22:37.379 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/Authorization - 200 null text/html; charset=utf-8 634.5037ms
+2024-06-09 20:22:37.435 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 20:22:45.342 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-06-09 20:22:45.397 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 13), @p1='?' (DbType = DateTime), @p2='?' (Size = 8), @p3='?' (Size = 4), @p4='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "Email" = @p0, "LastLoginDate" = @p1, "LastName" = @p2, "Name" = @p3, "Password" = @p4
+WHERE "Id" = @p5
+RETURNING 1;
+2024-06-09 20:22:45.442 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-06-09 20:22:45.461 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 20:22:49.540 +05:00 [ERR] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-06-09 20:22:49.562 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-06-09 20:22:49.615 +05:00 [WRN] Unhandled exception rendering component: SQLite Error 1: 'no such table: Confidants'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CourceProject.Components.Data.InDbSQLiteListConfidants.GetConfidants() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Data\InDbSQLiteListConfidants.cs:line 28
+   at CourceProject.Components.Pages.Proxies.OnInitializedAsync() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Pages\Proxies.razor:line 100
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+2024-06-09 20:22:49.627 +05:00 [ERR] Unhandled exception in circuit 'fqp5ORyE2TOR0buxuqcNI5zgQpo_z4IRr1LAC-jFPkU'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CourceProject.Components.Data.InDbSQLiteListConfidants.GetConfidants() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Data\InDbSQLiteListConfidants.cs:line 28
+   at CourceProject.Components.Pages.Proxies.OnInitializedAsync() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Pages\Proxies.razor:line 100
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+2024-06-09 20:22:49.636 +05:00 [WRN] Unhandled exception rendering component: Cannot access a disposed object.
+System.ObjectDisposedException: Cannot access a disposed object.
+   at Microsoft.AspNetCore.Components.RenderTree.ArrayBuilder`1.GrowBuffer(Int32 desiredCapacity)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+2024-06-09 20:22:49.641 +05:00 [ERR] Unhandled exception in circuit 'fqp5ORyE2TOR0buxuqcNI5zgQpo_z4IRr1LAC-jFPkU'.
+System.ObjectDisposedException: Cannot access a disposed object.
+   at Microsoft.AspNetCore.Components.RenderTree.ArrayBuilder`1.GrowBuffer(Int32 desiredCapacity)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForFramesWithSameSequence(DiffContext& diffContext, Int32 oldFrameIndex, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+2024-06-09 20:22:49.648 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:22:49.649 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=55VQQg78kpDki-HVO_4AHg - 200 null null 13087.1085ms
+2024-06-09 20:22:49.652 +05:00 [INF] Connection id "0HN48IVU10VR5", Request id "0HN48IVU10VR5:00000011": the application completed without reading the entire request body.
+2024-06-09 20:23:53.022 +05:00 [INF] Starting web application
+2024-06-09 20:23:53.480 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 20:23:53.748 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 20:23:53.749 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 20:23:53.750 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 20:23:53.754 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 20:23:53.756 +05:00 [INF] Hosting environment: Development
+2024-06-09 20:23:53.756 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 20:23:56.558 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 20:23:56.635 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 20:23:56.742 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 20:23:56.747 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 192.2946ms
+2024-06-09 20:23:56.803 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 20:23:56.803 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 20:23:56.803 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 20:23:56.803 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 20:23:56.820 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 17.6798ms
+2024-06-09 20:23:56.816 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 20:23:56.830 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 28.1339ms
+2024-06-09 20:23:56.804 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 20:23:56.839 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 20:23:56.842 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 20:23:56.841 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 20:23:56.847 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 20:23:56.847 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 42.6822ms
+2024-06-09 20:23:56.849 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 45.9956ms
+2024-06-09 20:23:56.860 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.924ms
+2024-06-09 20:23:56.904 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 20:23:56.907 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:23:56.911 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:23:56.912 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 8.4445ms
+2024-06-09 20:23:58.541 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 20:23:58.554 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:23:58.566 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:23:58.574 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 34.3842ms
+2024-06-09 20:23:58.842 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=MrxNdzw8rtGBg2Mbv0TBFg - null null
+2024-06-09 20:23:58.844 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:24:17.294 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 20:24:25.962 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 20:24:34.812 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-06-09 20:24:34.859 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 13), @p1='?' (DbType = DateTime), @p2='?' (Size = 8), @p3='?' (Size = 4), @p4='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "Email" = @p0, "LastLoginDate" = @p1, "LastName" = @p2, "Name" = @p3, "Password" = @p4
+WHERE "Id" = @p5
+RETURNING 1;
+2024-06-09 20:24:34.887 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-06-09 20:24:34.899 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 20:25:45.057 +05:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 5), @p2='?' (Size = 5), @p3='?' (DbType = Int64), @p4='?' (Size = 5), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Confidants" ("Email", "LastName", "Name", "Number", "SurName", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2024-06-09 20:25:45.090 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-06-09 20:26:20.971 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 20:26:20.982 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:20.983 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:20.984 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 14.7802ms
+2024-06-09 20:26:20.985 +05:00 [ERR] Unhandled exception in circuit 'NyR12BqHwdlYU-TTFm2TQWU8nY4ekrg80Wegwnb3ZzM'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Confidants'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CourceProject.Components.Data.InDbSQLiteListConfidants.AddConfidant(Confidant confidant) in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Data\InDbSQLiteListConfidants.cs:line 17
+   at CourceProject.Components.Pages.Proxies.AddConfidant() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Pages\Proxies.razor:line 141
+   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__128_0(Object state)
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.PostAsync[TState](Task antecedent, Action`1 callback, TState state)
+2024-06-09 20:26:20.988 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=kmRCygcXzEw6ocAZY3K_Ew - null null
+2024-06-09 20:26:21.015 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:21.028 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:21.030 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=MrxNdzw8rtGBg2Mbv0TBFg - 200 null null 142187.4654ms
+2024-06-09 20:26:21.034 +05:00 [INF] Connection id "0HN48J0M79FHL", Request id "0HN48J0M79FHL:00000011": the application completed without reading the entire request body.
+2024-06-09 20:26:23.829 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:23.831 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=kmRCygcXzEw6ocAZY3K_Ew - 200 null null 2843.5229ms
+2024-06-09 20:26:23.835 +05:00 [INF] Connection id "0HN48J0M79FHL", Request id "0HN48J0M79FHL:00000015": the application completed without reading the entire request body.
+2024-06-09 20:26:23.856 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/Confidant - null null
+2024-06-09 20:26:23.867 +05:00 [INF] Executing endpoint '/Confidant (/Confidant)'
+2024-06-09 20:26:23.878 +05:00 [INF] Executed endpoint '/Confidant (/Confidant)'
+2024-06-09 20:26:23.880 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/Confidant - 200 null text/html; charset=utf-8 23.7734ms
+2024-06-09 20:26:23.914 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryEJwLEjsQS5wN4HAy 359
+2024-06-09 20:26:23.916 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:23.936 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 20:26:23.937 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 20:26:23.938 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 20:26:23.948 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 11.3342ms
+2024-06-09 20:26:23.954 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 20:26:23.937 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 20:26:23.958 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 20:26:23.937 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 20:26:23.961 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 20:26:23.961 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:23.964 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 26.861ms
+2024-06-09 20:26:23.966 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 51.7582ms
+2024-06-09 20:26:23.961 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 23.5011ms
+2024-06-09 20:26:23.963 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 26.295ms
+2024-06-09 20:26:23.972 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.1632ms
+2024-06-09 20:26:23.981 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 20:26:23.982 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 20:26:24.018 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 20:26:24.020 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:24.022 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:24.023 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 4.3496ms
+2024-06-09 20:26:24.176 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 20:26:24.195 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:24.223 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:24.224 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/favicon.png - null null
+2024-06-09 20:26:24.242 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 65.3627ms
+2024-06-09 20:26:24.251 +05:00 [INF] Sending file. Request path: '/favicon.png'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\wwwroot\favicon.png'
+2024-06-09 20:26:24.251 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=30ti4PqE8g3Gq2gNSMgEaQ - null null
+2024-06-09 20:26:24.260 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/favicon.png - 200 1148 image/png 36.964ms
+2024-06-09 20:26:24.260 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:54.069 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 10), @p2='?' (Size = 10), @p3='?' (DbType = Int64), @p4='?' (Size = 10), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Confidants" ("Email", "LastName", "Name", "Number", "SurName", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2024-06-09 20:26:54.087 +05:00 [INF] Добавлено новое доверенное лицо {новое лицо новое лицо новое лицо}
+2024-06-09 20:26:54.104 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/PasswordManager - null null
+2024-06-09 20:26:54.110 +05:00 [INF] Executing endpoint '/PasswordManager (/PasswordManager)'
+2024-06-09 20:26:54.157 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 20:26:54.161 +05:00 [INF] Executed endpoint '/PasswordManager (/PasswordManager)'
+2024-06-09 20:26:54.162 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/PasswordManager - 200 null text/html; charset=utf-8 57.9904ms
+2024-06-09 20:26:54.209 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 20:26:54.210 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 20:26:54.210 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 20:26:54.221 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 11.9312ms
+2024-06-09 20:26:54.209 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary4W35szlwCVus3e2e 359
+2024-06-09 20:26:54.209 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 20:26:54.215 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.8266ms
+2024-06-09 20:26:54.210 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 20:26:54.223 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:54.225 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 20:26:54.223 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 13.9578ms
+2024-06-09 20:26:54.227 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:54.240 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 20:26:54.230 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 20:26:54.235 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=30ti4PqE8g3Gq2gNSMgEaQ - 200 null null 29983.6063ms
+2024-06-09 20:26:54.241 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.3008ms
+2024-06-09 20:26:54.243 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 20:26:54.244 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:54.247 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 20:26:54.248 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 38.7163ms
+2024-06-09 20:26:54.249 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 39.2481ms
+2024-06-09 20:26:54.349 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 20:26:54.351 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:54.352 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:54.353 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 3.8186ms
+2024-06-09 20:26:54.385 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 20:26:54.387 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:54.388 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:54.389 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 5.2645ms
+2024-06-09 20:26:54.391 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=dCQjeH54m0agNI86oL8lFA - null null
+2024-06-09 20:26:54.392 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:26:54.402 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 20:37:18.748 +05:00 [INF] Starting web application
+2024-06-09 20:37:20.485 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 20:37:21.250 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 20:37:21.251 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 20:37:21.251 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 20:37:21.255 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 20:37:21.255 +05:00 [INF] Hosting environment: Development
+2024-06-09 20:37:21.256 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 20:37:23.888 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 20:37:24.007 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 20:37:24.152 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 20:37:24.158 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 273.4622ms
+2024-06-09 20:37:24.217 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 20:37:24.247 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 20:37:24.217 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 20:37:24.248 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 20:37:24.217 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 20:37:24.260 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 43.0414ms
+2024-06-09 20:37:24.296 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 79.2781ms
+2024-06-09 20:37:24.296 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 79.671ms
+2024-06-09 20:37:24.299 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 20:37:24.308 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 20:37:24.314 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 20:37:24.320 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 20:37:24.322 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 20:37:24.324 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 107.5613ms
+2024-06-09 20:37:24.327 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.6076ms
+2024-06-09 20:37:24.453 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 20:37:24.455 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:37:24.466 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:37:24.467 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 14.0271ms
+2024-06-09 20:37:26.028 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 20:37:26.031 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:37:26.037 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:37:26.038 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 10.4575ms
+2024-06-09 20:37:26.344 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/Authorization - null null
+2024-06-09 20:37:26.348 +05:00 [INF] Executing endpoint '/Authorization (/Authorization)'
+2024-06-09 20:37:26.621 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=OfiHI4IpY5fkvupHqfYLlQ - null null
+2024-06-09 20:37:26.623 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:37:27.489 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 20:37:27.600 +05:00 [INF] Executed endpoint '/Authorization (/Authorization)'
+2024-06-09 20:37:27.607 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/Authorization - 200 null text/html; charset=utf-8 1262.8586ms
+2024-06-09 20:37:27.672 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 20:39:27.047 +05:00 [INF] Starting web application
+2024-06-09 20:39:27.674 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 20:39:28.012 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 20:39:28.013 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 20:39:28.013 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 20:39:28.017 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 20:39:28.018 +05:00 [INF] Hosting environment: Development
+2024-06-09 20:39:28.018 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 20:39:28.571 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 20:39:28.641 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 20:39:28.738 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 20:39:28.744 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 177.3798ms
+2024-06-09 20:39:28.802 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 20:39:28.802 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 20:39:28.803 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 20:39:28.808 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 6.1673ms
+2024-06-09 20:39:28.807 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 20:39:28.814 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 11.5007ms
+2024-06-09 20:39:28.816 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 20:39:28.819 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 20:39:28.819 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 20:39:28.822 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 20:39:28.824 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 21.8482ms
+2024-06-09 20:39:28.825 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 20:39:28.825 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 20:39:28.837 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 12.6175ms
+2024-06-09 20:39:28.856 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.4851ms
+2024-06-09 20:39:28.876 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 20:39:28.878 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:39:28.880 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:39:28.881 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 5.7836ms
+2024-06-09 20:39:29.642 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 20:39:29.645 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:39:29.654 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:39:29.655 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 14.0698ms
+2024-06-09 20:39:29.693 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=jyntzINqqXb-a7pFlACAzw - null null
+2024-06-09 20:39:29.695 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:39:34.659 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 20:39:42.438 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-06-09 20:39:42.549 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 13), @p1='?' (DbType = DateTime), @p2='?' (Size = 8), @p3='?' (Size = 4), @p4='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "Email" = @p0, "LastLoginDate" = @p1, "LastName" = @p2, "Name" = @p3, "Password" = @p4
+WHERE "Id" = @p5
+RETURNING 1;
+2024-06-09 20:39:42.621 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-06-09 20:39:42.641 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 20:55:40.131 +05:00 [INF] Starting web application
+2024-06-09 20:55:40.617 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 20:55:40.903 +05:00 [INF] Now listening on: https://localhost:7228
+2024-06-09 20:55:40.904 +05:00 [INF] Now listening on: http://localhost:5216
+2024-06-09 20:55:40.904 +05:00 [INF] Now listening on: https://192.168.1.2:80
+2024-06-09 20:55:40.908 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-09 20:55:40.909 +05:00 [INF] Hosting environment: Development
+2024-06-09 20:55:40.909 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-06-09 20:55:43.817 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-06-09 20:55:43.904 +05:00 [INF] Executing endpoint '/ (/)'
+2024-06-09 20:55:44.018 +05:00 [INF] Executed endpoint '/ (/)'
+2024-06-09 20:55:44.027 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 213.2642ms
+2024-06-09 20:55:44.075 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 20:55:44.075 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 20:55:44.075 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 20:55:44.075 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 20:55:44.075 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 20:55:44.090 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 15.7515ms
+2024-06-09 20:55:44.101 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 26.3581ms
+2024-06-09 20:55:44.083 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 20:55:44.108 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 33.0422ms
+2024-06-09 20:55:44.109 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 20:55:44.110 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 20:55:44.116 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 20:55:44.118 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 20:55:44.118 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 43.7128ms
+2024-06-09 20:55:44.126 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.0118ms
+2024-06-09 20:55:44.193 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 20:55:44.195 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:55:44.199 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:55:44.200 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 8.0908ms
+2024-06-09 20:55:44.947 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 20:55:44.949 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:55:44.956 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:55:44.957 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 10.0373ms
+2024-06-09 20:55:45.924 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=3ragpSdL4dRRkIjUF4ocrw - null null
+2024-06-09 20:55:45.926 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:55:56.010 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-06-09 20:56:01.968 +05:00 [INF] Пользователь с именем {Саня} найден в системе
+2024-06-09 20:56:02.019 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 13), @p1='?' (DbType = DateTime), @p2='?' (Size = 8), @p3='?' (Size = 4), @p4='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "Email" = @p0, "LastLoginDate" = @p1, "LastName" = @p2, "Name" = @p3, "Password" = @p4
+WHERE "Id" = @p5
+RETURNING 1;
+2024-06-09 20:56:02.063 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage
+2024-06-09 20:56:02.080 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-06-09 20:57:40.185 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 11), @p1='?' (Size = 5), @p2='?' (Size = 5), @p3='?' (DbType = Int64), @p4='?' (Size = 5), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Confidants" ("Email", "LastName", "Name", "Number", "SurName", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+RETURNING "Id";
+2024-06-09 20:57:40.201 +05:00 [INF] Добавлено новое доверенное лицо {Новое Новое Новое у пользователя Саня  с id=14}
+2024-06-09 20:57:40.216 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/Confidant - null null
+2024-06-09 20:57:40.225 +05:00 [INF] Executing endpoint '/Confidant (/Confidant)'
+2024-06-09 20:57:40.237 +05:00 [INF] Executed endpoint '/Confidant (/Confidant)'
+2024-06-09 20:57:40.239 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/Confidant - 200 null text/html; charset=utf-8 23.8158ms
+2024-06-09 20:57:40.356 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryaiCQxpHjtReBlfNN 359
+2024-06-09 20:57:40.360 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:57:40.371 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-06-09 20:57:40.376 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-06-09 20:57:40.388 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 17.5607ms
+2024-06-09 20:57:40.398 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 23.0455ms
+2024-06-09 20:57:40.376 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-09 20:57:40.376 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-06-09 20:57:40.406 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-06-09 20:57:40.408 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-06-09 20:57:40.414 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-06-09 20:57:40.386 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-06-09 20:57:40.411 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 34.448ms
+2024-06-09 20:57:40.421 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:57:40.422 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-06-09 20:57:40.432 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 77.6234ms
+2024-06-09 20:57:40.433 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-06-09 20:57:40.415 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:57:40.437 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 60.2223ms
+2024-06-09 20:57:40.438 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=3ragpSdL4dRRkIjUF4ocrw - 200 null null 114513.8708ms
+2024-06-09 20:57:40.444 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.2758ms
+2024-06-09 20:57:40.451 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-06-09 20:57:40.452 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:57:40.453 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:57:40.454 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 3.5256ms
+2024-06-09 20:57:41.124 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-06-09 20:57:41.126 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:57:41.127 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-06-09 20:57:41.159 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 35.8604ms
+2024-06-09 20:57:41.169 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=HqV5L6miCgaP9h9EI3PCig - null null
+2024-06-09 20:57:41.195 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
