@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@using Blazored.Toast.Configuration
 
 <div class="page">
     <div class="sidebar">
@@ -23,13 +24,17 @@
     <a class="dismiss">🗙</a>
 </div>
 
-<BlazoredToasts Position="Blazored.Toast.Configuration.ToastPosition.TopRight" 
-Timeout="10"
-IconType="Blazored.Toast.Configuration.IconType.FontAwesome"
-SuccessClass="success-toast-override"
-SuccessIcon="fa fa-thumbs-up"
-ErrorIcon="fa fa-bug"
-WarningIcon="fa fa-warning"
-InfoIcon="fa fa-info-circle">
+
+
+<BlazoredToasts Position="Blazored.Toast.Configuration.ToastPosition.TopRight"
+                RemoveToastsOnNavigation=false
+                Timeout="10"
+                IconType="Blazored.Toast.Configuration.IconType.FontAwesome"
+                SuccessClass="success-toast-override"
+                SuccessIcon="fa fa-thumbs-up"
+                ErrorIcon="fa fa-bug"
+                WarningIcon="fa fa-warning"
+                InfoIcon="fa fa-info-circle">
 </BlazoredToasts>
+
 

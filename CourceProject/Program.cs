@@ -11,7 +11,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("log.txt")
     .CreateLogger();
-
+Log.Logger.Information("Запуск приложения: " + DateTime.Now);
 try
 {
     Log.Information("Starting web application");
@@ -19,6 +19,7 @@ try
     builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
     builder.Services.AddBlazoredToast();
+    
     builder.Logging.ClearProviders();
     builder.Logging.AddConsole();
     builder.Host.UseSerilog(); // <-- Add this line
@@ -47,6 +48,7 @@ try
     app.MapRazorComponents<App>()
         .AddInteractiveServerRenderMode();
     app.Run();
+    
 }
 catch (Exception ex)
 {
@@ -54,6 +56,7 @@ catch (Exception ex)
 }
 finally
 {
+    Log.Logger.Information("Остановка приложения: " + DateTime.Now);
     Log.CloseAndFlush();
 }
 

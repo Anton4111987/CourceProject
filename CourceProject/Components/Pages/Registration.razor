@@ -102,7 +102,7 @@
         }
         return flag;
     }
-    protected override async void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         users = await _listUsers.GetUsers();
     }

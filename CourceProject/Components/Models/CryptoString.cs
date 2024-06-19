@@ -2,7 +2,8 @@
 {
     public class CryptoString
     {
+
         public string? Key { get; set; }
-        public string? iv { get; set; }
+        public string? Iv { get; set; }
     }
 }

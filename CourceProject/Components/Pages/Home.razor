@@ -1,4 +1,13 @@
-﻿
+﻿@using CourceProject.Components.Data
+@using CourceProject.Components.Models
+@using CourceProject.Components.Services
+@using MailKit
+
+@inject IUserRepository _listUsers
+@inject IConfidantRepository _listConfidants
+@inject IEncryptor passwordEncryptor;
+@inject ILogger<Authorization> logger
+@inject IEmailSender sendMessage
 @page "/"
 
 <PageTitle>Home</PageTitle>
@@ -16,5 +25,89 @@
 <br />
 
 <br />
+
+@code {
+
+    private IEnumerable<User> _users = new List<User>();
+    private IEnumerable<Confidant> _confidants = new List<Confidant>();
+    SendEmailDataModel? sendEmailDataModel;
+    int _attemptToSend = 0; // количечтво попыток отправки
+    string? dispatchReport; // обратная связь о том что письмо отправлено
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        _users = await _listUsers.GetUsers();
+        foreach(User u in _users)
+        {
+            if (u.LastLoginDate != null)
+            {
+                var date1 = DateTime.Now;  
+                var date2 = (DateTime)u.LastLoginDate; // получение даты последнего входа пользователей
+                TimeSpan result = date1.Subtract(date2); // результат разницы между date.now и последним входом пользователей
+                if (result.TotalDays >= 183) 
+                {
+                    _confidants = from confidant in await _listConfidants.GetConfidants()
+                                  where confidant.UserId==u.Id
+                                  select confidant;
+                    foreach(Confidant conf in _confidants)
+                    {
+                        sendEmailDataModel = new()
+                            {
+                                Email = conf.Email,
+                                Subject = "Служба менеджера паролей",
+                                StringMessage = "Вас приветствует служба менеджера паролей!\n" +
+                                    "При регистрации в данном приложении пользователь (" + u.Name + " " + u.LastName + ") с Email: " + u.Email + " указал вас как доверенное лицо!\n" +
+                                    "Введу того, что пользователя по каким-либо причинам не было в приложении более 183 дней, вам было направлено данное письмо с логином и паролем для входа в приложение менеджера паролей\n" +
+                                    "Логин - " + u.Name + "\n" +
+                                    "Пароль - " + passwordEncryptor.Decrypt(u.Password!)+
+                                    "С уважением администрация приложения менеджера паролей!"
+                            };
+                            await Send();
+                    }
+                    
+
+                }
+
+            }
+            
+            
+            
+        }
+
+    }
+
+    private async Task Send()
+    {
+        _attemptToSend++;
+        logger.LogInformation("Попытка отправки имейла на адрес {Email}", sendEmailDataModel.Email);
+        try
+        {
+
+            await sendMessage.SendEmail(sendEmailDataModel);
+            dispatchReport = $"Сообщение '{sendEmailDataModel.Subject}' успешно отправлено";
+
+            logger.LogInformation("Сообщение на адрес {Email} успешно отправлено", sendEmailDataModel.Email);
+            sendEmailDataModel = new();
+        }
+        catch (Exception e) when (_attemptToSend < 3
+                                        && e is ServiceNotAuthenticatedException
+                                        or ServiceNotConnectedException
+                                        //...
+                                        )
+        {
+            logger.LogWarning(e, "Ошибка отправки имейла на адрес {Email}. Делаем еще одну попытку", sendEmailDataModel.Email, e.Message);
+            await Send(); //retry
+        }
+        catch (Exception e)
+        {
+            // Даем разработчику явно понять, что произошла ошибка, и что нужно что-то делать.
+            logger.LogCritical(e, "Ошибка отправки имейла на адрес {Email}. Ошибка: {Error}", sendEmailDataModel.Email, e.Message);
+            dispatchReport = "Ошибка отправки письма";
+        }
+
+
+    }
+}
 
 

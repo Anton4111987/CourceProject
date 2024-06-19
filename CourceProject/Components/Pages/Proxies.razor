@@ -7,13 +7,10 @@
 @inject Blazored.SessionStorage.ISessionStorageService localStorage
 
 @inject NavigationManager navigationManager
-
 @inject IToastService toastService
 @inject ILogger<Confidant> logger
 @page "/Confidant"
-
 @rendermode InteractiveServer
-
 <h3>Confidant</h3>
 <p> Список доверенных лиц </p>
 
@@ -32,7 +29,7 @@
         <br />
         <button class="btn btn-3" id="exit" @onclick="Exit">Выйти</button>
         <br />
-        <table class="table">
+        <table href="/confidant#tableElement" class="table">
             <thead>
                 <tr>
                     <th>Фамилия</th>
@@ -40,6 +37,7 @@
                     <th>Отчество</th>
                     <th>Email адрес</th>
                     <th>Номер телефона</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -92,13 +90,13 @@
     private string? _nameUser;
     private IEnumerable<Confidant> confidants=new List<Confidant>();
     private Confidant _newConfidant = new();
-    private int selectedNumber;
+    //private int selectedNumber;
     private bool isConnected;
     private bool checkedValue;
     protected override async Task OnInitializedAsync()
     {
-        // confidants = await _listConfidants.GetConfidants();
-        //confidants = confidants.Where(c => c.UserId == _userId);
+        confidants = await _listConfidants.GetConfidants();
+        confidants = confidants.Where(c => c.UserId == _userId);
     }
 
     private async void Change(Confidant confidant, int selectedNumber)
@@ -106,6 +104,7 @@
         await _listConfidants.UpdateConfidant(confidant);
         logger.LogInformation("Обновлены данные доверенного лица {" + confidant.Name + " " + confidant.SurName + " " + confidant.LastName + "}");
         toastService.ShowInfo("Обновлены данные доверенного лица {" + confidant.Name + " " + confidant.SurName + " " + confidant.LastName + "}");
+
     }
 
     private async Task ReadLocalStorage()
@@ -123,7 +122,7 @@
             StateHasChanged();
         }
     }
-
+    #region Метод добавления доверенного лица
     private async void AddConfidant()
     {
         if (_newConfidant.Name != null && _newConfidant.LastName != null && _newConfidant.SurName != null && _newConfidant.Email != null && _newConfidant.Number!=null)
@@ -137,24 +136,31 @@
                 Number = _newConfidant.Number,
                 UserId = _userId
             };
-        
+
             await _listConfidants.AddConfidant(_newConfidant);
             logger.LogInformation("Добавлено новое доверенное лицо {" + _newConfidant.LastName + " " + _newConfidant.Name + " " + _newConfidant.SurName + " у пользователя " + _nameUser + "  с id=" + _userId +"}");
-            navigationManager.NavigateTo("/Confidant", true);
             toastService.ShowSuccess("Добавлено новое доверенное лицо {" + _newConfidant.LastName + " " + _newConfidant.Name + " " + _newConfidant.SurName + "}");
+            navigationManager.NavigateTo("/Confidant", true);
+
             _newConfidant = new();
         }
         else
             toastService.ShowError("Не все поля заполнены корректно");
     }
+    # endregion
 
+    #region  Метод удаление доверенного лица
     private void DeleteConfidant(Confidant confidant)
     {
         _listConfidants.Delete(confidant);
-        logger.LogInformation("Удалено доверенное лицо {" + confidant.LastName + " " + confidant.Name + " " + confidant.SurName + "}");
-        navigationManager.NavigateTo("/PasswordManager", true);
-    }
+        navigationManager.NavigateTo("/Authorization"); // переделать как-то нужно
+        navigationManager.NavigateTo("/confidant");
+        toastService.ShowInfo("Удалено доверенное лицо {" + confidant.LastName + " " + confidant.Name + " " + confidant.SurName + "}");
+        
 
+    }
+    #endregion
+    
     private async void Exit()
     {
         navigationManager.NavigateTo("/Authorization");
