@@ -34,5 +34,12 @@ namespace CourceProject.Components.Data
         {
             return await _context.Users.FindAsync(id);
         }
+
+        public async Task DeleteUser(User user)
+        {
+             _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

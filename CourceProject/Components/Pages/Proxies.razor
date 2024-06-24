@@ -138,9 +138,10 @@
             };
 
             await _listConfidants.AddConfidant(_newConfidant);
-            logger.LogInformation("Добавлено новое доверенное лицо {" + _newConfidant.LastName + " " + _newConfidant.Name + " " + _newConfidant.SurName + " у пользователя " + _nameUser + "  с id=" + _userId +"}");
+            logger.LogInformation("Добавлено новое доверенное лицо {" + _newConfidant.LastName + " " + _newConfidant.Name + " " + _newConfidant.SurName + "} у пользователя " + _nameUser + "  с id=" + _userId +"");
             toastService.ShowSuccess("Добавлено новое доверенное лицо {" + _newConfidant.LastName + " " + _newConfidant.Name + " " + _newConfidant.SurName + "}");
-            navigationManager.NavigateTo("/Confidant", true);
+            navigationManager.NavigateTo("/Home");
+            navigationManager.NavigateTo("/Confidant");
 
             _newConfidant = new();
         }

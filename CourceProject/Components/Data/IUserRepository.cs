@@ -31,5 +31,12 @@ namespace CourceProject.Components.Data
         /// <returns></returns>
         public Task<User?> GetUserById(int id);
 
+        /// <summary>
+        /// Метод удаления пользователя
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Task DeleteUser(User user);
+
     }
 }

@@ -26,6 +26,7 @@ try
     builder.Services.AddOptions<CryptoString>()
     .BindConfiguration("CryptoString");
     builder.Services.AddBlazoredSessionStorage();
+    builder.Services.AddScoped<IEmailSender, SmtpEmailSender>();
     builder.Services.AddScoped<IEncryptor, PassswordEncryptor>();
     builder.Services.AddScoped<IUserRepository, InDbSQLiteListUsers>();
     builder.Services.AddScoped<IAccountRepository, InDbSQLiteListAccounts>();

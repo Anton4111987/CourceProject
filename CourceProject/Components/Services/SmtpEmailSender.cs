@@ -8,13 +8,15 @@ namespace CourceProject.Components.Services
     public class SmtpEmailSender : IEmailSender, IAsyncDisposable
     {
         public SendEmailDataModel? SendEmailDataModel { get; set; }
-        public readonly SmtpConfig _smtpConfig;
+        public SmtpConfig _smtpConfig;
         private readonly SmtpClient _client = new();
         //private readonly ILogger<SmtpEmailSender> _logger;
 
-        public SmtpEmailSender(IOptions<SmtpConfig> options)//,  ILogger<SmtpEmailSender> logger)
+        public SmtpEmailSender() // IOptions<SmtpConfig> options)//,  ILogger<SmtpEmailSender> logger)
         {
-            _smtpConfig = options.Value;
+            //_smtpConfig = options.Value;
+            _smtpConfig=new SmtpConfig();
+            _smtpConfig.GetWithEnvironmentVariable();
             //_logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
         public async Task SendEmail(SendEmailDataModel message)
