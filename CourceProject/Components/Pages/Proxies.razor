@@ -11,9 +11,12 @@
 @inject ILogger<Confidant> logger
 @page "/Confidant"
 @rendermode InteractiveServer
-<h3>Confidant</h3>
-<p> Список доверенных лиц </p>
+<h1 style="color:blueviolet; font-style:oblique" align="center">Confidant</h1>
+<p style="color:blueviolet; font-style:oblique" align="center"> Список доверенных лиц </p>
+<center>Доверенные лица служат для того чтобы получить логин и пароль пользователя если он отсутствовал в приложении более 183 дней </center>
 
+<br />
+<br />
 @if (isConnected)
 {
     if(_userId==0)

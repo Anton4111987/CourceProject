@@ -13,30 +13,45 @@
 
 @rendermode InteractiveServer
 
-<h3>@_pageTitle</h3>
+<h3 style ="color:blueviolet; font-style:oblique" align="center">@_pageTitle</h3>
+<br/>
+<div class="container-fluid">
+    <div class="col-md-4 offset-md-4" text-align="left">
+        <div class="form-container">
+            <div class="form-icon"><i class="fa fa-user"></i></div>
+            <h3 class="title">Registration</h3>
+            <EditForm Model="@_user" OnValidSubmit="AddUser" FormName="user_registration" class="form-horizontal">
+                <DataAnnotationsValidator />
+                <div class="form-group">
+                    <label>Имя пользователя</label>
+                    <InputText id="name" @bind-Value="@_user.Name" class="form-control" placeholder="Имя" />
+                </div>
+                <div class="form-group">
+                    <label>Фамилия пользователя</label>
+                    <InputText id="lastname" @bind-Value="@_user.LastName" class="form-control" placeholder="Фамилия" />
+                </div>
+                <div class="form-group">
+                    <label> Email пользователя</label>
+                    <InputText id="email" @bind-Value="@_user.Email" class="form-control" type="email" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <label> Пароль пользователя</label>
+                    <InputText type="password" id="password" @bind-Value="@_user.Password" class="form-control" placeholder="Пароль" />
+                </div>
+                <div class="form-group">
+                    <label> Повтор Пароля пользователя</label>
+                    <InputText type="password" id="password" @bind-Value="@repeatPassword.Password" class="form-control" placeholder="Повторите пароль" />
+                </div>
+                <ValidationSummary />
+                <br />
+                <br /> <input type="submit" value="Добавить пользователя" class="btn btn-default">
+                <br />
+            </EditForm>
+        </div>
+    </div>
+</div>
 
-<EditForm Model="@_user" OnValidSubmit="AddUser" FormName="user_registration" >
-    <DataAnnotationsValidator />
-    <br />
-    Имя пользователя: <InputText id="name" @bind-Value="@_user.Name" />
-    <br />
-    <br />
-    Фамилия пользователя: <InputText id="lastname" @bind-Value="@_user.LastName" />
-    <br />
-    <br />
-    Email пользователя: <InputText id="email" @bind-Value="@_user.Email" />
-    <br />
-    <br />
-    Пароль пользователя: <InputText type="password" id="password" @bind-Value="@_user.Password" />
-    <br />
-    <br />
-    Повторите Пароль: <InputText type="password" id="repeat_password" @bind-Value="@repeatPassword.Password" />
-    <br />
-    <ValidationSummary />
-    <br />
-    <br /> <input type="submit" value="Добавить пользователя">
-    <br />
-</EditForm> 
+
 
 @code {
     private string _pageTitle = "Регистрация нового пользователя и добавление в базу";

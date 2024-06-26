@@ -13,27 +13,39 @@
 
 @rendermode InteractiveServer
 
-<h1>@_pageTitle</h1>
+<h1 style="color:blueviolet; font-style:oblique" align="center">@_pageTitle</h1>
+<br/>
+<div class="container-fluid">
+    <div class="col-md-4 offset-md-4" text-align="left">
+        <div class="form-container">
+            <div class="form-icon"><i class="fa fa-user"></i></div>
+            <h3 class="title">Authorisation</h3>
+            <EditForm Model="@_userAuthorization" OnValidSubmit="UserAuthorization" FormName="user_authorization" class="form-horizontal">
+                <DataAnnotationsValidator />
+                <div class="form-group">
+                    <label>Имя пользователя</label>
+                    <InputText @bind-Value="_userAuthorization.Name" class="form-control" placeholder="Имя пользователя" />
+                </div>
+                <div class="form-group">
+                    <label>Фамилия пользователя</label>
+                    <InputText type="password" @bind-Value="_userAuthorization.Password" class="form-control" placeholder="Фамилия" />
+                </div>
+                
+                <ValidationSummary />
+                <br />
+                <br /> <input type="submit" value="Авторизоваться" class="btn btn-default">
+                <br />
+            </EditForm>
+        </div>
+    </div>
+</div>
 
 
-<EditForm Model="@_userAuthorization" OnValidSubmit="UserAuthorization" FormName="user_authorization" >
-    <DataAnnotationsValidator />
-    <br />
-    <div>
-        <b style="color:blueviolet; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Имя пользователя: </b>
-        <InputText @bind-Value="_userAuthorization.Name" />
-    </div>    
-    <br />
-    <div>
-        <b style="color:blueviolet; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Пароль пользователя:  </b>
-        <InputText type="password" @bind-Value="_userAuthorization.Password" />
-    </div>    
-    <br />
-    <ValidationSummary />
-    <br />
-    <input class=" btn btn-primary" type="submit" value="Авторизоваться" />
-    
-</EditForm>
+
+
+
+
+
 
 @code {
     private string _pageTitle = "Авторизация пользователя";
