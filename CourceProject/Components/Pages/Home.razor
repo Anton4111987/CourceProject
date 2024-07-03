@@ -11,11 +11,15 @@
 @page "/"
 
 <PageTitle>Home</PageTitle>
+<div id="wrapper">
+    <h1> Добро пожаловать в приложение "Менеджер паролей"! </h1>
 
-<h1> Добро пожаловать в приложение "Менеджер паролей"! </h1>
+    <br />
+    <h5>Данное серверное приложение служит для хранения паролей от разных сервисов, аккаунтов.</h5>
+    <img src="Менеджер паролей.jpg" style="width:100%">
+   
 
-<br />
-<h5>Данное серверное приложение служит для хранения паролей от разных сервисов, аккаунтов.</h5>
+</div>
 
 <br />
 <br />
@@ -28,7 +32,7 @@
 
 @code 
 {
-    private IEnumerable<User> _users = new List<User>();
+    private IEnumerable<User>? _users = new List<User>();
     private IEnumerable<Confidant> _confidants = new List<Confidant>();
     SendEmailDataModel? sendEmailDataModel;
     int _attemptToSend = 0; // количечтво попыток отправки
@@ -45,34 +49,43 @@
                 var date1 = DateTime.Now;
                 var date2 = (DateTime)u.LastLoginDate; // получение даты последнего входа пользователей
                 TimeSpan result = date1.Subtract(date2); // результат разницы между date.now и последним входом пользователей
-                                                         //if (result.TotalDays >= 183 && result.TotalDays<240) // если со дня последнего входа прошло более 183 суток
-                if (result.Minutes > 2)
+
+                //if (result.TotalDays >= 183 && result.TotalDays<240) // если со дня последнего входа прошло более 183 суток
+                if (result.Minutes > 2 && u.LongAbsence == false)
                 {
                     _confidants = from confidant in await _listConfidants.GetConfidants() // получаем список доверенных лиц с помощью запроса sql
                                   where confidant.UserId == u.Id
                                   select confidant;
-                    foreach (Confidant conf in _confidants)
+                    if (_confidants!=null)
                     {
-                        sendEmailDataModel = new()
-                            {
-                                Email = conf.Email,
-                                Subject = "Служба менеджера паролей",
-                                StringMessage = "Вас приветствует служба менеджера паролей!\n" +
-                                            "При регистрации в данном приложении пользователь (" + u.Name + " " + u.LastName + ") с Email: " + u.Email + " указал вас как доверенное лицо!\n" +
-                                            "Введу того, что пользователя по каким-либо причинам не было в приложении более 183 дней, вам было направлено данное письмо с логином и паролем для входа в приложение менеджера паролей\n" +
-                                            "Логин: " + u.Name + "\n" +
-                                            "Пароль: " + passwordEncryptor.Decrypt(u.Password!) + "\n" +
-                                            "ВНИМАНИЕ!!!" +
-                                            "В случае, если вход не будет осуществлен в течении 60 календарных дней, данные пользователя " + u.Name + " " + u.LastName + " с Email: " + u.Email + "  будет удален из системы безвозвратно\n" +
-                                            "С уважением администрация приложения менеджера паролей!"
-                            };
+                        foreach (Confidant conf in _confidants)
+                        {
+                            sendEmailDataModel = new()
+                                {
+                                    Email = conf.Email,
+                                    Subject = "Служба менеджера паролей",
+                                    StringMessage = "Вас приветствует служба менеджера паролей!\n" +
+                                                    "При регистрации в данном приложении пользователь (" + u.Name + " " + u.LastName + ") с Email: " + u.Email + " указал вас как доверенное лицо!\n" +
+                                                    "Введу того, что пользователя по каким-либо причинам не было в приложении более 183 дней, вам было направлено данное письмо с логином и паролем для входа в приложение менеджера паролей\n" +
+                                                    "Логин: " + u.Name + "\n" +
+                                                    "Пароль: " + passwordEncryptor.Decrypt(u.Password!) + "\n" +
+                                                    "ВНИМАНИЕ!!!" +
+                                                    "В случае, если вход не будет осуществлен в течении 60 календарных дней, данные пользователя " + u.Name + " " + u.LastName + " с Email: " + u.Email + "  будет удален из системы безвозвратно\n" +
+                                                    "С уважением администрация приложения менеджера паролей!"
+                                };
 
-                        await Send(); // добавить параметры пользователя для логирования в отправке
+
+
+
+                            await Send(); // добавить параметры пользователя для логирования в отправке
+
+                        }
+
+                        u.LongAbsence = true;
                     }
-
-
+                    
                 }
-                if (result.TotalDays > 243)
+                if (result.TotalDays > 243 && u.LongAbsence==true)
                 {
                     await Delete(u);
                 }

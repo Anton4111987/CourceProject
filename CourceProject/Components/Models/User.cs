@@ -37,5 +37,9 @@ namespace CourceProject.Components.Models
         /// </summary>
         public DateTime? LastLoginDate { get; set; }
 
+        /// <summary>
+        /// Флаг долгого отсутствия пользователя в приложении
+        /// </summary>
+        public bool? LongAbsence { get; set; }
     }
 }

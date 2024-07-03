@@ -10,19 +10,21 @@ namespace CourceProject.Components.Services
         public SendEmailDataModel? SendEmailDataModel { get; set; }
         public SmtpConfig _smtpConfig;
         private readonly SmtpClient _client = new();
+        private readonly string _nameMessageSender;//= "AdministrationManagerPasswords";
         //private readonly ILogger<SmtpEmailSender> _logger;
 
-        public SmtpEmailSender() // IOptions<SmtpConfig> options)//,  ILogger<SmtpEmailSender> logger)
+        public SmtpEmailSender(string _nameMessageSender) // IOptions<SmtpConfig> options)//,  ILogger<SmtpEmailSender> logger)
         {
             //_smtpConfig = options.Value;
             _smtpConfig=new SmtpConfig();
             _smtpConfig.GetWithEnvironmentVariable();
+            this._nameMessageSender= _nameMessageSender;
             //_logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
         public async Task SendEmail(SendEmailDataModel message)
         {
             using var emailMessage = new MimeMessage();
-            emailMessage.From.Add(new MailboxAddress("AdministrationManagerPasswords", _smtpConfig.UserName));
+            emailMessage.From.Add(new MailboxAddress(_nameMessageSender, _smtpConfig.UserName));
             emailMessage.To.Add(new MailboxAddress("", message.Email));
             emailMessage.Subject = message.Subject;
             emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Plain)

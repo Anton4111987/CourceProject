@@ -6,6 +6,7 @@ using CourceProject.Components.Data;
 using CourceProject.Components.Services;
 using CourceProject.Components.Models;
 using Blazored.Toast;
+using Microsoft.Extensions.DependencyInjection;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -26,7 +27,7 @@ try
     builder.Services.AddOptions<CryptoString>()
     .BindConfiguration("CryptoString");
     builder.Services.AddBlazoredSessionStorage();
-    builder.Services.AddScoped<IEmailSender, SmtpEmailSender>();
+    builder.Services.AddScoped<IEmailSender>(sendMessage=>new SmtpEmailSender("AdministrationManagerPasswords"));
     builder.Services.AddScoped<IEncryptor, PassswordEncryptor>();
     builder.Services.AddScoped<IUserRepository, InDbSQLiteListUsers>();
     builder.Services.AddScoped<IAccountRepository, InDbSQLiteListAccounts>();

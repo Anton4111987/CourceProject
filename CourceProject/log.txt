@@ -2598,3 +2598,989 @@ FROM "Users" AS "u"
 2024-06-26 21:19:23.515 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_blazor?id=yUuh3tGD3NsHQA-ORZ0BUg - 101 null null 306776.1765ms
 2024-06-26 21:19:23.539 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryzwbRUAGDJEHXhFMB 359
 2024-06-26 21:19:23.541 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 19:59:59.198 +05:00 [INF] Запуск приложения: 01.07.2024 19:59:59
+2024-07-01 19:59:59.258 +05:00 [INF] Starting web application
+2024-07-01 20:00:01.190 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-01 20:00:01.896 +05:00 [INF] Now listening on: http://localhost:5216
+2024-07-01 20:00:01.897 +05:00 [INF] Now listening on: http://192.168.1.2:80
+2024-07-01 20:00:01.899 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 20:00:01.900 +05:00 [INF] Hosting environment: Development
+2024-07-01 20:00:01.901 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-07-01 20:00:04.568 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 20:00:04.707 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-07-01 20:00:04.709 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 20:00:05.919 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:00:05.976 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 20:00:05.991 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 20:00:07.208 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 20:00:07.295 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 20:00:07.340 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/app.css - null null
+2024-07-01 20:00:07.340 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/app2.css - null null
+2024-07-01 20:00:07.341 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/CourceProject.styles.css - null null
+2024-07-01 20:00:07.346 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - null null
+2024-07-01 20:00:07.352 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - null null
+2024-07-01 20:00:07.387 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - 404 0 null 15.1941ms
+2024-07-01 20:00:07.387 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-07-01 20:00:07.388 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 2825.0042ms
+2024-07-01 20:00:07.390 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-07-01 20:00:07.394 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/bootstrap/bootstrap.min.css - null null
+2024-07-01 20:00:07.395 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-01 20:00:07.400 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.7257ms
+2024-07-01 20:00:07.447 +05:00 [INF] Sending file. Request path: '/_framework/blazor.web.js'. Physical path: 'N/A'
+2024-07-01 20:00:07.447 +05:00 [INF] Sending file. Request path: '/CourceProject.styles.css'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\obj\Debug\net8.0\scopedcss\bundle\CourceProject.styles.css'
+2024-07-01 20:00:07.448 +05:00 [INF] Sending file. Request path: '/app2.css'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\wwwroot\app2.css'
+2024-07-01 20:00:07.448 +05:00 [INF] Sending file. Request path: '/app.css'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\wwwroot\app.css'
+2024-07-01 20:00:07.449 +05:00 [INF] Sending file. Request path: '/bootstrap/bootstrap.min.css'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\wwwroot\bootstrap\bootstrap.min.css'
+2024-07-01 20:00:07.449 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-07-01 20:00:07.450 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/CourceProject.styles.css - 200 6053 text/css 109.2802ms
+2024-07-01 20:00:07.451 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/app2.css - 200 2149 text/css 111.3545ms
+2024-07-01 20:00:07.452 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/app.css - 200 2871 text/css 112.1653ms
+2024-07-01 20:00:07.453 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/bootstrap/bootstrap.min.css - 200 162726 text/css 59.4323ms
+2024-07-01 20:00:07.454 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - 200 186744 text/javascript 103.0516ms
+2024-07-01 20:00:07.455 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-07-01 20:00:07.493 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.1697ms
+2024-07-01 20:00:07.569 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor/initializers - null null
+2024-07-01 20:00:07.571 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:00:07.574 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:00:07.574 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_blazor/initializers - 200 null application/json; charset=utf-8 5.7376ms
+2024-07-01 20:00:08.321 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-07-01 20:00:08.324 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:00:08.330 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:00:08.331 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 9.5116ms
+2024-07-01 20:00:08.670 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor?id=agqVwQLu9qL9YIGOwfNINw - null null
+2024-07-01 20:00:08.672 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:00:08.954 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:00:08.956 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 20:00:08.957 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 20:00:09.591 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 20:01:01.792 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:01:01.794 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_blazor?id=agqVwQLu9qL9YIGOwfNINw - 101 null null 53123.4158ms
+2024-07-01 20:01:01.827 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryAYSRpIB6NPudNxWS 359
+2024-07-01 20:01:01.828 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:01:01.987 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:01:01.988 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/_blazor/disconnect - 200 0 null 161.6961ms
+2024-07-01 20:29:27.523 +05:00 [INF] Запуск приложения: 01.07.2024 20:29:27
+2024-07-01 20:29:27.552 +05:00 [INF] Starting web application
+2024-07-01 20:29:28.078 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-01 20:29:28.395 +05:00 [INF] Now listening on: http://localhost:5216
+2024-07-01 20:29:28.395 +05:00 [INF] Now listening on: http://192.168.1.2:80
+2024-07-01 20:29:28.399 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 20:29:28.400 +05:00 [INF] Hosting environment: Development
+2024-07-01 20:29:28.400 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-07-01 20:29:31.051 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 20:29:31.132 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-07-01 20:29:31.134 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 20:29:31.797 +05:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:29:31.897 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-07-01 20:29:31.980 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 20:29:31.981 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CourceProject.Components.Data.InDbSQLiteListUsers.GetUsers() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Data\InDbSQLiteListUsers.cs:line 30
+   at CourceProject.Components.Pages.Home.OnInitializedAsync() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Pages\Home.razor:line 40
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewComponentFrame(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewSubtree(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.ComputeDiff(Renderer renderer, RenderBatchBuilder batchBuilder, Int32 componentId, ArrayRange`1 oldTree, ArrayRange`1 newTree)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.AddToRenderQueue(Int32 componentId, RenderFragment renderFragment)
+   at Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()
+   at Microsoft.AspNetCore.Components.ComponentBase.CallOnParametersSetAsync()
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderRootComponentAsync(Int32 componentId, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer.BeginRenderingComponent(IComponent component, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.RenderEndpointComponent(HttpContext httpContext, Type rootComponentType, ParameterView parameters, Boolean waitForQuiescence)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.<>c.<<InvokeAsync>b__10_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-01 20:29:32.060 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 500 null text/html; charset=utf-8 1012.4066ms
+2024-07-01 20:29:32.093 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-01 20:29:32.093 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-07-01 20:29:32.097 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 3.9061ms
+2024-07-01 20:29:32.117 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.3064ms
+2024-07-01 20:29:33.211 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/favicon.ico - null null
+2024-07-01 20:29:33.217 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/favicon.ico - 404 0 null 5.7035ms
+2024-07-01 20:29:33.219 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/favicon.ico, Response status code: 404
+2024-07-01 20:30:01.737 +05:00 [INF] Запуск приложения: 01.07.2024 20:30:01
+2024-07-01 20:30:01.757 +05:00 [INF] Starting web application
+2024-07-01 20:30:02.116 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-01 20:30:02.340 +05:00 [INF] Now listening on: http://localhost:5216
+2024-07-01 20:30:02.341 +05:00 [INF] Now listening on: http://192.168.1.2:80
+2024-07-01 20:30:02.345 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 20:30:02.345 +05:00 [INF] Hosting environment: Development
+2024-07-01 20:30:02.346 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-07-01 20:30:02.763 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 20:30:02.826 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-07-01 20:30:02.828 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 20:30:03.343 +05:00 [ERR] Failed executing DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:30:03.362 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-07-01 20:30:03.434 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 20:30:03.435 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CourceProject.Components.Data.InDbSQLiteListUsers.GetUsers() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Data\InDbSQLiteListUsers.cs:line 30
+   at CourceProject.Components.Pages.Home.OnInitializedAsync() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Pages\Home.razor:line 40
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewComponentFrame(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewSubtree(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.ComputeDiff(Renderer renderer, RenderBatchBuilder batchBuilder, Int32 componentId, ArrayRange`1 oldTree, ArrayRange`1 newTree)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.AddToRenderQueue(Int32 componentId, RenderFragment renderFragment)
+   at Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()
+   at Microsoft.AspNetCore.Components.ComponentBase.CallOnParametersSetAsync()
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderRootComponentAsync(Int32 componentId, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer.BeginRenderingComponent(IComponent component, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.RenderEndpointComponent(HttpContext httpContext, Type rootComponentType, ParameterView parameters, Boolean waitForQuiescence)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.<>c.<<InvokeAsync>b__10_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-01 20:30:03.486 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 500 null text/html; charset=utf-8 726.4706ms
+2024-07-01 20:30:03.502 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-01 20:30:03.502 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-07-01 20:30:03.505 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 2.7649ms
+2024-07-01 20:30:03.525 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.7104ms
+2024-07-01 20:31:41.069 +05:00 [INF] Запуск приложения: 01.07.2024 20:31:41
+2024-07-01 20:31:41.085 +05:00 [INF] Starting web application
+2024-07-01 20:31:41.496 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-01 20:31:41.724 +05:00 [INF] Now listening on: http://localhost:5216
+2024-07-01 20:31:41.725 +05:00 [INF] Now listening on: http://192.168.1.2:80
+2024-07-01 20:31:41.728 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 20:31:41.729 +05:00 [INF] Hosting environment: Development
+2024-07-01 20:31:41.730 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-07-01 20:31:44.514 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 20:31:44.610 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-07-01 20:31:44.612 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 20:31:45.128 +05:00 [ERR] Failed executing DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:31:45.148 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-07-01 20:31:45.216 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 20:31:45.217 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CourceProject.Components.Data.InDbSQLiteListUsers.GetUsers() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Data\InDbSQLiteListUsers.cs:line 30
+   at CourceProject.Components.Pages.Home.OnInitializedAsync() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Pages\Home.razor:line 40
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewComponentFrame(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewSubtree(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.ComputeDiff(Renderer renderer, RenderBatchBuilder batchBuilder, Int32 componentId, ArrayRange`1 oldTree, ArrayRange`1 newTree)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.AddToRenderQueue(Int32 componentId, RenderFragment renderFragment)
+   at Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()
+   at Microsoft.AspNetCore.Components.ComponentBase.CallOnParametersSetAsync()
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderRootComponentAsync(Int32 componentId, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer.BeginRenderingComponent(IComponent component, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.RenderEndpointComponent(HttpContext httpContext, Type rootComponentType, ParameterView parameters, Boolean waitForQuiescence)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.<>c.<<InvokeAsync>b__10_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-01 20:31:45.273 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 500 null text/html; charset=utf-8 763.1547ms
+2024-07-01 20:31:45.356 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-07-01 20:31:45.356 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-01 20:31:45.361 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.7663ms
+2024-07-01 20:31:45.390 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.4227ms
+2024-07-01 20:32:56.886 +05:00 [INF] Запуск приложения: 01.07.2024 20:32:56
+2024-07-01 20:32:56.907 +05:00 [INF] Starting web application
+2024-07-01 20:32:57.293 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-01 20:32:57.528 +05:00 [INF] Now listening on: http://localhost:5216
+2024-07-01 20:32:57.529 +05:00 [INF] Now listening on: http://192.168.1.2:80
+2024-07-01 20:32:57.534 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 20:32:57.535 +05:00 [INF] Hosting environment: Development
+2024-07-01 20:32:57.536 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-07-01 20:33:00.281 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 20:33:00.349 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-07-01 20:33:00.352 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 20:33:00.889 +05:00 [ERR] Failed executing DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:33:00.909 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-07-01 20:33:00.978 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 20:33:00.980 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Users'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CourceProject.Components.Data.InDbSQLiteListUsers.GetUsers() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Data\InDbSQLiteListUsers.cs:line 30
+   at CourceProject.Components.Pages.Home.OnInitializedAsync() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Pages\Home.razor:line 40
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewComponentFrame(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewSubtree(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.ComputeDiff(Renderer renderer, RenderBatchBuilder batchBuilder, Int32 componentId, ArrayRange`1 oldTree, ArrayRange`1 newTree)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.AddToRenderQueue(Int32 componentId, RenderFragment renderFragment)
+   at Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()
+   at Microsoft.AspNetCore.Components.ComponentBase.CallOnParametersSetAsync()
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderRootComponentAsync(Int32 componentId, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer.BeginRenderingComponent(IComponent component, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.RenderEndpointComponent(HttpContext httpContext, Type rootComponentType, ParameterView parameters, Boolean waitForQuiescence)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.<>c.<<InvokeAsync>b__10_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-01 20:33:01.043 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 500 null text/html; charset=utf-8 765.4069ms
+2024-07-01 20:33:01.075 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-07-01 20:33:01.075 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-01 20:33:01.080 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.7972ms
+2024-07-01 20:33:01.096 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.6958ms
+2024-07-01 20:34:41.014 +05:00 [INF] Запуск приложения: 01.07.2024 20:34:40
+2024-07-01 20:34:41.033 +05:00 [INF] Starting web application
+2024-07-01 20:34:41.370 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-01 20:34:41.593 +05:00 [INF] Now listening on: http://localhost:5216
+2024-07-01 20:34:41.593 +05:00 [INF] Now listening on: http://192.168.1.2:80
+2024-07-01 20:34:41.597 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 20:34:41.598 +05:00 [INF] Hosting environment: Development
+2024-07-01 20:34:41.598 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-07-01 20:34:41.843 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 20:34:41.910 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-07-01 20:34:41.912 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 20:34:42.346 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 20:34:42.400 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Accounts" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Accounts" PRIMARY KEY AUTOINCREMENT,
+    "Source" TEXT NOT NULL,
+    "Login" TEXT NOT NULL,
+    "Password" TEXT NOT NULL,
+    "UserId" INTEGER NULL
+);
+2024-07-01 20:34:42.402 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Confidants" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Confidants" PRIMARY KEY AUTOINCREMENT,
+    "LastName" TEXT NOT NULL,
+    "Name" TEXT NOT NULL,
+    "SurName" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "Number" TEXT NOT NULL,
+    "UserId" INTEGER NULL
+);
+2024-07-01 20:34:42.403 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Users" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "LastName" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "Password" TEXT NOT NULL,
+    "LastLoginDate" TEXT NULL
+);
+2024-07-01 20:34:42.510 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:34:42.578 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 20:34:42.587 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 747.3378ms
+2024-07-01 20:34:42.631 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-01 20:34:42.633 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - null null
+2024-07-01 20:34:42.633 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - null null
+2024-07-01 20:34:42.636 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.0997ms
+2024-07-01 20:34:42.640 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-07-01 20:34:42.642 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - 404 0 null 9.5057ms
+2024-07-01 20:34:42.638 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-07-01 20:34:42.690 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-07-01 20:34:42.692 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-07-01 20:34:42.694 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-07-01 20:34:42.696 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - 304 null text/javascript 63.2265ms
+2024-07-01 20:34:42.714 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.8398ms
+2024-07-01 20:34:42.736 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor/initializers - null null
+2024-07-01 20:34:42.739 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:34:42.744 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:34:42.745 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_blazor/initializers - 200 null application/json; charset=utf-8 9.3508ms
+2024-07-01 20:34:43.470 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-07-01 20:34:43.496 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:34:43.524 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:34:43.537 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 67.93ms
+2024-07-01 20:34:43.825 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor?id=JMcIBv8lJwxJFqHVCdwWoQ - null null
+2024-07-01 20:34:43.827 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:34:44.142 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 20:34:44.145 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:34:52.158 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:34:54.259 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:34:58.102 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-07-01 20:34:58.159 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:35:04.229 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:35:10.974 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:10.976 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_blazor?id=JMcIBv8lJwxJFqHVCdwWoQ - 101 null null 27151.3416ms
+2024-07-01 20:35:10.993 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundary4mxGQr6nAbBfZIRZ 359
+2024-07-01 20:35:10.997 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:11.058 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:11.059 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/_blazor/disconnect - 200 0 null 65.4186ms
+2024-07-01 20:35:14.536 +05:00 [INF] Запуск приложения: 01.07.2024 20:35:14
+2024-07-01 20:35:14.552 +05:00 [INF] Starting web application
+2024-07-01 20:35:14.996 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-01 20:35:15.210 +05:00 [INF] Now listening on: http://localhost:5216
+2024-07-01 20:35:15.211 +05:00 [INF] Now listening on: http://192.168.1.2:80
+2024-07-01 20:35:15.214 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 20:35:15.214 +05:00 [INF] Hosting environment: Development
+2024-07-01 20:35:15.215 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-07-01 20:35:15.496 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 20:35:15.573 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-07-01 20:35:15.575 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 20:35:16.006 +05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 20:35:16.110 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:35:16.164 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 20:35:16.172 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 678.6239ms
+2024-07-01 20:35:16.189 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-01 20:35:16.190 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - null null
+2024-07-01 20:35:16.191 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - null null
+2024-07-01 20:35:16.192 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.0269ms
+2024-07-01 20:35:16.202 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - 404 0 null 10.1777ms
+2024-07-01 20:35:16.194 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-07-01 20:35:16.206 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-07-01 20:35:16.207 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-07-01 20:35:16.210 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-07-01 20:35:16.211 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-07-01 20:35:16.214 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - 304 null text/javascript 21.7743ms
+2024-07-01 20:35:16.228 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.3756ms
+2024-07-01 20:35:16.320 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor/initializers - null null
+2024-07-01 20:35:16.323 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:16.326 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:16.327 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_blazor/initializers - 200 null application/json; charset=utf-8 6.828ms
+2024-07-01 20:35:17.049 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-07-01 20:35:17.051 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:17.056 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:17.057 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 8.8865ms
+2024-07-01 20:35:17.399 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor?id=7LxOi9QtOnkSBHXccQjoOw - null null
+2024-07-01 20:35:17.402 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:17.675 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 20:35:17.678 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 20:35:33.355 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:33.356 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_blazor?id=7LxOi9QtOnkSBHXccQjoOw - 101 null null 15957.3562ms
+2024-07-01 20:35:33.371 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryagBZBv5P71FI5gs8 359
+2024-07-01 20:35:33.374 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:33.383 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 20:35:33.384 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/_blazor/disconnect - 200 0 null 12.9529ms
+2024-07-01 21:03:47.632 +05:00 [INF] Запуск приложения: 01.07.2024 21:03:47
+2024-07-01 21:03:47.648 +05:00 [INF] Starting web application
+2024-07-01 21:03:48.060 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-01 21:03:48.334 +05:00 [INF] Now listening on: http://localhost:5216
+2024-07-01 21:03:48.334 +05:00 [INF] Now listening on: http://192.168.1.2:80
+2024-07-01 21:03:48.337 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 21:03:48.337 +05:00 [INF] Hosting environment: Development
+2024-07-01 21:03:48.338 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-07-01 21:03:50.900 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 21:03:50.963 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-07-01 21:03:50.965 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 21:03:51.487 +05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 21:03:51.593 +05:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:03:51.621 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'CourceProject.Components.Data.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: u.LongAbsence'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: u.LongAbsence'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-07-01 21:03:51.690 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 21:03:51.691 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: u.LongAbsence'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CourceProject.Components.Data.InDbSQLiteListUsers.GetUsers() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Data\InDbSQLiteListUsers.cs:line 30
+   at CourceProject.Components.Pages.Home.OnInitializedAsync() in C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\Components\Pages\Home.razor:line 40
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewComponentFrame(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InitializeNewSubtree(DiffContext& diffContext, Int32 frameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.InsertNewFrame(DiffContext& diffContext, Int32 newFrameIndex)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.AppendDiffEntriesForRange(DiffContext& diffContext, Int32 oldStartIndex, Int32 oldEndIndexExcl, Int32 newStartIndex, Int32 newEndIndexExcl)
+   at Microsoft.AspNetCore.Components.RenderTree.RenderTreeDiffBuilder.ComputeDiff(Renderer renderer, RenderBatchBuilder batchBuilder, Int32 componentId, ArrayRange`1 oldTree, ArrayRange`1 newTree)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.AddToRenderQueue(Int32 componentId, RenderFragment renderFragment)
+   at Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged()
+   at Microsoft.AspNetCore.Components.ComponentBase.CallOnParametersSetAsync()
+   at Microsoft.AspNetCore.Components.ComponentBase.RunInitAndSetParametersAsync()
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderRootComponentAsync(Int32 componentId, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer.BeginRenderingComponent(IComponent component, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.RenderEndpointComponent(HttpContext httpContext, Type rootComponentType, ParameterView parameters, Boolean waitForQuiescence)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Endpoints.RazorComponentEndpointInvoker.RenderComponentCore(HttpContext context)
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.<>c.<<InvokeAsync>b__10_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-01 21:03:51.746 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 500 null text/html; charset=utf-8 849.3972ms
+2024-07-01 21:03:51.778 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-07-01 21:03:51.778 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-01 21:03:51.782 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.5686ms
+2024-07-01 21:03:51.800 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.3253ms
+2024-07-01 21:04:47.087 +05:00 [INF] Запуск приложения: 01.07.2024 21:04:47
+2024-07-01 21:04:47.103 +05:00 [INF] Starting web application
+2024-07-01 21:04:47.546 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-01 21:04:47.761 +05:00 [INF] Now listening on: http://localhost:5216
+2024-07-01 21:04:47.762 +05:00 [INF] Now listening on: http://192.168.1.2:80
+2024-07-01 21:04:47.764 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 21:04:47.766 +05:00 [INF] Hosting environment: Development
+2024-07-01 21:04:47.766 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-07-01 21:04:48.022 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 21:04:48.091 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-07-01 21:04:48.093 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 21:04:48.508 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 21:04:48.612 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:04:48.656 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:04:48.669 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 21:04:49.769 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 21:04:49.774 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:04:49.778 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:04:49.779 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:04:49.827 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 21:04:49.852 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - null null
+2024-07-01 21:04:49.853 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - null null
+2024-07-01 21:04:49.856 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-07-01 21:04:49.857 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - 404 0 null 4.8444ms
+2024-07-01 21:04:49.860 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-07-01 21:04:49.861 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-07-01 21:04:49.866 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-07-01 21:04:49.867 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-07-01 21:04:49.868 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - 304 null text/javascript 15.2017ms
+2024-07-01 21:04:49.885 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 1866.7937ms
+2024-07-01 21:04:49.887 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.8085ms
+2024-07-01 21:04:49.888 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-01 21:04:49.892 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 4.234ms
+2024-07-01 21:04:49.928 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor/initializers - null null
+2024-07-01 21:04:49.930 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 21:04:49.932 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 21:04:49.933 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_blazor/initializers - 200 null application/json; charset=utf-8 5.5244ms
+2024-07-01 21:04:50.614 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-07-01 21:04:50.617 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 21:04:50.623 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 21:04:50.623 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 9.0217ms
+2024-07-01 21:04:50.957 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor?id=vmyHkSDxKAN7zAHRUtHOZQ - null null
+2024-07-01 21:04:50.959 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 21:04:51.254 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 21:04:51.257 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:04:51.259 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:04:51.260 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 21:04:51.484 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:04:51.893 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 21:04:51.894 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:04:51.896 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:04:51.897 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:04:58.766 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 13), @p1='?' (DbType = DateTime), @p2='?' (Size = 8), @p3='?' (DbType = Boolean), @p4='?' (Size = 4), @p5='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "Email" = @p0, "LastLoginDate" = @p1, "LastName" = @p2, "LongAbsence" = @p3, "Name" = @p4, "Password" = @p5
+WHERE "Id" = @p6
+RETURNING 1;
+2024-07-01 21:04:58.770 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "LongAbsence" = @p0
+WHERE "Id" = @p1
+RETURNING 1;
+2024-07-01 21:04:58.771 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "LongAbsence" = @p0
+WHERE "Id" = @p1
+RETURNING 1;
+2024-07-01 21:04:58.773 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "LongAbsence" = @p0
+WHERE "Id" = @p1
+RETURNING 1;
+2024-07-01 21:04:58.812 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage при авторизации
+2024-07-01 21:04:58.825 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-07-01 21:05:05.291 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:05:06.917 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-07-01 21:05:09.007 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:05:11.771 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-07-01 21:05:24.751 +05:00 [INF] Выход пользователя {Саня} из приложения!
+2024-07-01 21:05:24.757 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:05:24.765 +05:00 [INF] Очистка sessionStorage!
+2024-07-01 21:06:55.446 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-07-01 21:06:55.497 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:06:56.743 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:06:58.488 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:07:13.499 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:07:13.502 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:07:13.505 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:07:13.508 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:16:59.052 +05:00 [INF] Запуск приложения: 01.07.2024 21:16:59
+2024-07-01 21:16:59.070 +05:00 [INF] Starting web application
+2024-07-01 21:16:59.448 +05:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-01 21:16:59.703 +05:00 [INF] Now listening on: http://localhost:5216
+2024-07-01 21:16:59.704 +05:00 [INF] Now listening on: http://192.168.1.2:80
+2024-07-01 21:16:59.708 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 21:16:59.709 +05:00 [INF] Hosting environment: Development
+2024-07-01 21:16:59.710 +05:00 [INF] Content root path: C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject
+2024-07-01 21:17:00.003 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 21:17:00.068 +05:00 [WRN] Failed to determine the https port for redirect.
+2024-07-01 21:17:00.070 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 21:17:00.553 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 21:17:00.657 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:17:00.701 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:00.712 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 21:17:01.704 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 21:17:01.714 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:01.717 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:01.719 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:01.767 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 21:17:01.815 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - null null
+2024-07-01 21:17:01.816 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2024-07-01 21:17:01.816 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_vs/browserLink - null null
+2024-07-01 21:17:01.819 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-07-01 21:17:01.830 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 13.7338ms
+2024-07-01 21:17:01.842 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 1842.6371ms
+2024-07-01 21:17:01.843 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-07-01 21:17:01.846 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - null null
+2024-07-01 21:17:01.847 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-07-01 21:17:01.848 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/blazor.web.js - 304 null text/javascript 33.5315ms
+2024-07-01 21:17:01.850 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css - 404 0 null 4.2677ms
+2024-07-01 21:17:01.854 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-07-01 21:17:01.859 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.0193ms
+2024-07-01 21:17:01.912 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor/initializers - null null
+2024-07-01 21:17:01.914 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 21:17:01.917 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 21:17:01.918 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_blazor/initializers - 200 null application/json; charset=utf-8 6.4461ms
+2024-07-01 21:17:02.665 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-07-01 21:17:02.667 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 21:17:02.672 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 21:17:02.673 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5216/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 8.3767ms
+2024-07-01 21:17:03.027 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_blazor?id=Wju-6XJn727lS_AyINLLRw - null null
+2024-07-01 21:17:03.029 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-07-01 21:17:03.266 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 21:17:03.269 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:17:03.270 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:03.272 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 21:17:03.900 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 21:17:03.901 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:03.903 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:03.904 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:35.443 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/Менеджер паролей.jpg - null null
+2024-07-01 21:17:35.466 +05:00 [INF] Sending file. Request path: '/Менеджер паролей.jpg'. Physical path: 'C:\Users\User\source\repos\c#\ASP NET Core\CourceProject\CourceProject\wwwroot\Менеджер паролей.jpg'
+2024-07-01 21:17:35.467 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/Менеджер паролей.jpg - 200 260364 image/jpeg 24.0956ms
+2024-07-01 21:17:35.469 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 21:17:35.476 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 21:17:35.523 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 21:17:35.526 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:17:35.528 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:35.529 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 21:17:36.720 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 21:17:36.722 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:36.724 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:36.728 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:17:36.736 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 21:17:36.787 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 1318.2098ms
+2024-07-01 21:18:00.284 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 21:18:00.287 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 21:18:00.291 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 21:18:00.292 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:18:00.294 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:18:00.295 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 21:18:00.920 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 21:18:00.922 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:18:00.926 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:18:00.930 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:18:00.933 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 21:18:00.981 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 697.2592ms
+2024-07-01 21:18:21.009 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 21:18:21.011 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 21:18:21.014 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 21:18:21.015 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:18:21.017 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:18:21.018 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 21:18:21.849 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 21:18:21.854 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:18:21.857 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:18:21.859 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:18:21.862 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 21:18:21.910 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 901.1163ms
+2024-07-01 21:19:32.246 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 21:19:32.255 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 21:19:32.257 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 21:19:32.259 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:19:32.261 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:19:32.263 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 21:19:33.151 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 21:19:33.153 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:19:33.155 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:19:33.157 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:19:33.163 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 21:19:33.210 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 963.9463ms
+2024-07-01 21:19:52.842 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2024-07-01 21:19:52.844 +05:00 [INF] Executing endpoint '/ (/)'
+2024-07-01 21:19:52.846 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-07-01 21:19:52.848 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-07-01 21:19:52.849 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:19:52.850 +05:00 [INF] Попытка отправки имейла на адрес laant@mail.ru
+2024-07-01 21:19:53.477 +05:00 [INF] Сообщение на адрес laant@mail.ru успешно отправлено
+2024-07-01 21:19:53.482 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:19:53.483 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:19:53.485 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Email", "c"."LastName", "c"."Name", "c"."Number", "c"."SurName", "c"."UserId"
+FROM "Confidants" AS "c"
+2024-07-01 21:19:53.491 +05:00 [INF] Executed endpoint '/ (/)'
+2024-07-01 21:19:53.539 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 200 null text/html; charset=utf-8 696.7169ms
