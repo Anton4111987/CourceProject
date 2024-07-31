@@ -20,7 +20,7 @@
 @if (isConnected)
 {
     if(_userId==0)
-    {
+    {// 
         toastService.ShowError("Пожалуйста авторизуйтесь!");
         navigationManager.NavigateTo("/Authorization");
     }
