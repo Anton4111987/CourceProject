@@ -129,6 +129,7 @@ h1:focus {
         border-radius: 10px;
     }
 
+
 @keyframes glowing {
     0% {
         background-position: 0 0;

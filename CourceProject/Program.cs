@@ -20,7 +20,6 @@ try
     builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
     builder.Services.AddBlazoredToast();
-    
     builder.Logging.ClearProviders();
     builder.Logging.AddConsole();
     builder.Host.UseSerilog(); // <-- Add this line

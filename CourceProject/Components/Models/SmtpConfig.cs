@@ -57,10 +57,6 @@ namespace CourceProject.Components.Models
             {
                 throw new InvalidOperationException($"Переменная среды окружения {port} не задана ");
             }
-
-
         }
-
-
     }
 }

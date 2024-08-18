@@ -102,12 +102,11 @@
         confidants = confidants.Where(c => c.UserId == _userId);
     }
 
-    private async void Change(Confidant confidant, int selectedNumber)
+    private async void Change(Confidant confidant, int selectedNumber) // изменение данных доверенного лица
     {
         await _listConfidants.UpdateConfidant(confidant);
         logger.LogInformation("Обновлены данные доверенного лица {" + confidant.Name + " " + confidant.SurName + " " + confidant.LastName + "}");
         toastService.ShowInfo("Обновлены данные доверенного лица {" + confidant.Name + " " + confidant.SurName + " " + confidant.LastName + "}");
-
     }
 
     private async Task ReadLocalStorage()
@@ -126,7 +125,7 @@
         }
     }
     #region Метод добавления доверенного лица
-    private async void AddConfidant()
+    private async void AddConfidant() // Метод добавления доверенного лица
     {
         if (_newConfidant.Name != null && _newConfidant.LastName != null && _newConfidant.SurName != null && _newConfidant.Email != null && _newConfidant.Number!=null)
         {
@@ -139,13 +138,11 @@
                 Number = _newConfidant.Number,
                 UserId = _userId
             };
-
             await _listConfidants.AddConfidant(_newConfidant);
             logger.LogInformation("Добавлено новое доверенное лицо {" + _newConfidant.LastName + " " + _newConfidant.Name + " " + _newConfidant.SurName + "} у пользователя " + _nameUser + "  с id=" + _userId +"");
             toastService.ShowSuccess("Добавлено новое доверенное лицо {" + _newConfidant.LastName + " " + _newConfidant.Name + " " + _newConfidant.SurName + "}");
             navigationManager.NavigateTo("/Home");
             navigationManager.NavigateTo("/Confidant");
-
             _newConfidant = new();
         }
         else
@@ -154,14 +151,12 @@
     # endregion
 
     #region  Метод удаление доверенного лица
-    private void DeleteConfidant(Confidant confidant)
+    private void DeleteConfidant(Confidant confidant) //Метод удаление доверенного лица
     {
         _listConfidants.Delete(confidant);
         navigationManager.NavigateTo("/Authorization"); // переделать как-то нужно
         navigationManager.NavigateTo("/confidant");
         toastService.ShowInfo("Удалено доверенное лицо {" + confidant.LastName + " " + confidant.Name + " " + confidant.SurName + "}");
-        
-
     }
     #endregion
     

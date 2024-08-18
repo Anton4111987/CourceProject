@@ -41,12 +41,6 @@
 </div>
 
 
-
-
-
-
-
-
 @code {
     private string _pageTitle = "Авторизация пользователя";
     private IEnumerable<User> users = new List<User>();
@@ -59,8 +53,8 @@
     {
         users = await _listUsers.GetUsers();
     }
-
-    private async Task UserAuthorization()
+    #region метод авторизации пользователя
+    private async Task UserAuthorization() // метод авторизации пользователя
     {
         if (_userAuthorization.Name != null && _userAuthorization.Password != null)
         {
@@ -83,13 +77,16 @@
         else
             toastService.ShowError("Не все поля заполнены корректно");
     }
+    #endregion
 
     private async Task SaveLocalStorage()
     {
         await localStorage.SetItemAsync("userId", _userId);
         await localStorage.SetItemAsync("userName", _userAuthorization.Name);
     }
-    private bool SearchUser()
+
+    #region метод поиска пользователя в базе
+    private bool SearchUser() // метод поиска пользователя в базе
     {
         _userAuthorization.Name = _userAuthorization.Name!.Trim();
         _userAuthorization.Password = _userAuthorization.Password!.Trim();
@@ -110,4 +107,5 @@
         }
         return flag;
     }
+    #endregion
 }

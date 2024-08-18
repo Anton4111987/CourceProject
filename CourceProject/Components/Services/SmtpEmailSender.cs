@@ -10,16 +10,13 @@ namespace CourceProject.Components.Services
         public SendEmailDataModel? SendEmailDataModel { get; set; }
         public SmtpConfig _smtpConfig;
         private readonly SmtpClient _client = new();
-        private readonly string _nameMessageSender;//= "AdministrationManagerPasswords";
-        //private readonly ILogger<SmtpEmailSender> _logger;
+        private readonly string _nameMessageSender;
 
         public SmtpEmailSender(string _nameMessageSender) // IOptions<SmtpConfig> options)//,  ILogger<SmtpEmailSender> logger)
         {
-            //_smtpConfig = options.Value;
             _smtpConfig=new SmtpConfig();
             _smtpConfig.GetWithEnvironmentVariable();
             this._nameMessageSender= _nameMessageSender;
-            //_logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
         public async Task SendEmail(SendEmailDataModel message)
         {
@@ -31,11 +28,8 @@ namespace CourceProject.Components.Services
             {
                 Text = message.StringMessage
             };
-
             await EnsureConnectedAndAuthed();
             await _client.SendAsync(emailMessage);
-            //_logger.LogInformation("Отправка {Email} с темой {Subject} прошла успешно", message.Email, message.Subject);
-
         }
         private async Task EnsureConnectedAndAuthed()
         {

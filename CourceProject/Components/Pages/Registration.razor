@@ -52,7 +52,6 @@
 </div>
 
 
-
 @code {
     private string _pageTitle = "Регистрация нового пользователя и добавление в базу";
     private int? userId;
@@ -63,7 +62,8 @@
     [SupplyParameterFromForm]
     private RepeatPassword repeatPassword { get; set; } = new();
 
-    private async Task AddUser()
+    #region метод добавления нового пользователя в базу
+    private async Task AddUser() // метод добавления нового пользователя в базу
     {
         if (!SearchUser())
         {
@@ -73,7 +73,6 @@
             }
             else
             {
-                
                 await _listUsers.AddUser(
                 new User
                     {
@@ -98,6 +97,7 @@
             toastService.ShowError("Пользователь с таким именем уже зарегистрирован в системе");
         }
     }
+    #endregion
     private async Task SaveLocalStorage()
     {
         await localStorage.SetItemAsync("userId", userId);
