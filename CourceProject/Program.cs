@@ -6,7 +6,6 @@ using CourceProject.Components.Data;
 using CourceProject.Components.Services;
 using CourceProject.Components.Models;
 using Blazored.Toast;
-using Microsoft.Extensions.DependencyInjection;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()

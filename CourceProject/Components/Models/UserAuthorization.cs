@@ -2,7 +2,7 @@
 
 namespace CourceProject.Components.Models
 {
-    public class UserAthirization
+    public class UserAuthorization
     {
         /// <summary>
         /// Имя пользователя 

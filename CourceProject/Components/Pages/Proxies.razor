@@ -2,15 +2,14 @@
 @using CourceProject.Components.Models
 
 @inject IUserRepository _listUsers
-
 @inject IConfidantRepository _listConfidants
 @inject Blazored.SessionStorage.ISessionStorageService localStorage
-
 @inject NavigationManager navigationManager
 @inject IToastService toastService
 @inject ILogger<Confidant> logger
 @page "/Confidant"
 @rendermode InteractiveServer
+
 <h1 style="color:blueviolet; font-style:oblique" align="center">Confidant</h1>
 <p style="color:blueviolet; font-style:oblique" align="center"> Список доверенных лиц </p>
 <center>Доверенные лица служат для того чтобы получить логин и пароль пользователя если он отсутствовал в приложении более 183 дней </center>

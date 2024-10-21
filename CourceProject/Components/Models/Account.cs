@@ -1,6 +1,4 @@
-﻿using CourceProject.Components.Data;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace CourceProject.Components.Models
 {

@@ -1,5 +1,4 @@
 ﻿using CourceProject.Components.Models;
-using Microsoft.Extensions.Options;
 using MailKit.Net.Smtp;
 using MimeKit;
 
