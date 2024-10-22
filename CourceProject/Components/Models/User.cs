@@ -2,7 +2,7 @@
 
 namespace CourceProject.Components.Models
 {
-    public class User
+    public class User:ICloneable
     {
         public int Id { get; set; }
 
@@ -29,7 +29,7 @@ namespace CourceProject.Components.Models
         /// Пароль
         /// </summary>
         [Required(ErrorMessage = "Пароль не может быть пустым")]
-        [StringLength(20, MinimumLength = 4)]
+        [StringLength(28, MinimumLength = 4)]
         public string? Password { get; set; }
 
         /// <summary>
@@ -41,5 +41,10 @@ namespace CourceProject.Components.Models
         /// Флаг долгого отсутствия пользователя в приложении
         /// </summary>
         public bool? LongAbsence { get; set; }
+
+        public object Clone()
+        {
+            return MemberwiseClone();
+        }
     }
 }

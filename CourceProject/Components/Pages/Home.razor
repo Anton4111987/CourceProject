@@ -31,18 +31,18 @@
     protected override async Task OnInitializedAsync()
     {
         _users = await _listUsers.GetUsers();
-        foreach (User u in _users)
+        foreach (User user in _users)
         {
-            if (u.LastLoginDate != null)
+            if (user.LastLoginDate != null)
             {
                 var date1 = DateTime.Now;
-                var date2 = (DateTime)u.LastLoginDate; // получение даты последнего входа пользователей
+                var date2 = (DateTime)user.LastLoginDate; // получение даты последнего входа пользователей
                 TimeSpan result = date1.Subtract(date2); // результат разницы между date.now и последним входом пользователей
                 //if (result.TotalDays >= 183 && result.TotalDays<240) // если со дня последнего входа прошло более 183 суток
-                if (result.Minutes > 2 && u.LongAbsence == false)
+                if (result.Minutes > 2 && user.LongAbsence == false)
                 {
                     _confidants = from confidant in await _listConfidants.GetConfidants() // получаем список доверенных лиц с помощью запроса sql
-                                  where confidant.UserId == u.Id
+                                  where confidant.UserId == user.Id
                                   select confidant;
                     if (_confidants!=null)
                     {
@@ -53,37 +53,37 @@
                                     Email = conf.Email,
                                     Subject = "Служба менеджера паролей",
                                     StringMessage = "Вас приветствует служба менеджера паролей!\n" +
-                                                    "При регистрации в данном приложении пользователь (" + u.Name + " " + u.LastName + ") с Email: " + u.Email + " указал вас как доверенное лицо!\n" +
+                                                    "При регистрации в данном приложении пользователь (" + user.Name + " " + user.LastName + ") с Email: " + user.Email + " указал вас как доверенное лицо!\n" +
                                                     "Введу того, что пользователя по каким-либо причинам не было в приложении более 183 дней, вам было направлено данное письмо с логином и паролем для входа в приложение менеджера паролей\n" +
-                                                    "Логин: " + u.Name + "\n" +
-                                                    "Пароль: " + passwordEncryptor.Decrypt(u.Password!) + "\n" +
+                                                    "Логин: " + user.Name + "\n" +
+                                                    "Пароль: " + passwordEncryptor.Decrypt(user.Password!) + "\n" +
                                                     "ВНИМАНИЕ!!!" +
-                                                    "В случае, если вход не будет осуществлен в течении 60 календарных дней, данные пользователя " + u.Name + " " + u.LastName + " с Email: " + u.Email + "  будет удален из системы безвозвратно\n" +
+                                                    "В случае, если вход не будет осуществлен в течении 60 календарных дней, данные пользователя " + user.Name + " " + user.LastName + " с Email: " + user.Email + "  будет удален из системы безвозвратно\n" +
                                                     "С уважением администрация приложения менеджера паролей!"
                                 };
 
-                            await Send(); // добавить параметры пользователя для логирования в отправке
+                            await Send(user); // добавить параметры пользователя для логирования в отправке
                         }
-                        u.LongAbsence = true;
+                        user.LongAbsence = true;
                     }
                 }
-                if (result.TotalDays > 243 && u.LongAbsence==true)
+                if (result.TotalDays > 243 && user.LongAbsence==true)
                 {
-                    await Delete(u);
+                    await Delete(user);
                 }
             }
         }
     }
     #region метод отправки сообщения доверенному лицу
-    private async Task Send() // метод отправки сообщения доверенному лицу
+    private async Task Send(User user) // метод отправки сообщения доверенному лицу
     {
         _attemptToSend++;
-        logger.LogInformation("Попытка отправки имейла на адрес {Email}", sendEmailDataModel!.Email);
+        logger.LogInformation("Попытка отправки имейла на адрес {Email} по пользователю {Name} {LastName} ", sendEmailDataModel!.Email, user.Name, user.LastName);
         try
         {
             await sendMessage.SendEmail(sendEmailDataModel);
             dispatchReport = $"Сообщение '{sendEmailDataModel.Subject}' успешно отправлено";
-            logger.LogInformation("Сообщение на адрес {Email} успешно отправлено", sendEmailDataModel.Email); // сюда
+            logger.LogInformation("Сообщение на адрес {Email} успешно отправлено по пользователю {Name} {LastName} ", sendEmailDataModel.Email, user.Name, user.LastName); // сюда
             sendEmailDataModel = new();
         }
         catch (Exception e) when (_attemptToSend < 3
@@ -92,13 +92,13 @@
                                         //...
                                         )
         {
-            logger.LogWarning(e, "Ошибка отправки имейла на адрес {Email}. Делаем еще одну попытку", sendEmailDataModel.Email, e.Message); // сюда
-            await Send(); //retry
+            logger.LogWarning(e, "Ошибка отправки имейла на адрес {Email} по пользователю {Name} {LastName}. Делаем еще одну попытку", sendEmailDataModel.Email, user.Name, user.LastName, e.Message); // сюда
+            await Send(user); //retry
         }
         catch (Exception e)
         {
             // Даем разработчику явно понять, что произошла ошибка, и что нужно что-то делать.
-            logger.LogCritical(e, "Ошибка отправки имейла на адрес {Email}. Ошибка: {Error}", sendEmailDataModel.Email, e.Message); // сюда
+            logger.LogCritical(e, "Ошибка отправки имейла на адрес {Email} по пользователю {Name} {LastName}. Ошибка: {Error}", sendEmailDataModel.Email, user.Name, user.LastName, e.Message); // сюда
             dispatchReport = "Ошибка отправки письма";
         }
     }
