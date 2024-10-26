@@ -16012,3 +16012,69 @@ SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NO
 2024-10-26 20:50:40.673 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
 FROM "Accounts" AS "a"
+2024-10-26 21:18:51.261 +05:00 [INF] Запуск приложения: 26.10.2024 21:18:51
+2024-10-26 21:18:51.309 +05:00 [INF] Starting web application
+2024-10-26 21:18:52.221 +05:00 [INF] User profile is available. Using 'C:\Users\Антон Андреевич\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-26 21:18:52.688 +05:00 [INF] Now listening on: https://localhost:7228
+2024-10-26 21:18:52.689 +05:00 [INF] Now listening on: http://localhost:5216
+2024-10-26 21:18:52.690 +05:00 [INF] Now listening on: https://192.168.0.11:80
+2024-10-26 21:18:52.693 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-26 21:18:52.694 +05:00 [INF] Hosting environment: Development
+2024-10-26 21:18:52.695 +05:00 [INF] Content root path: C:\Users\Антон Андреевич\Desktop\12\CourceProject
+2024-10-26 21:18:53.527 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ - null null
+2024-10-26 21:18:53.750 +05:00 [INF] Executing endpoint '/ (/)'
+2024-10-26 21:18:54.847 +05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-10-26 21:18:55.068 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-10-26 21:18:55.298 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - null null
+2024-10-26 21:18:55.302 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - null null
+2024-10-26 21:18:55.303 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - null null
+2024-10-26 21:18:55.307 +05:00 [INF] Executed endpoint '/ (/)'
+2024-10-26 21:18:55.308 +05:00 [INF] Executing endpoint 'Blazor web static files'
+2024-10-26 21:18:55.310 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css - 404 0 null 11.8586ms
+2024-10-26 21:18:55.310 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ //fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;%200,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;702&display=swap - 404 0 null 8.2667ms
+2024-10-26 21:18:55.317 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/_content/Blazored.Toast/blazored-toast.css, Response status code: 404
+2024-10-26 21:18:55.317 +05:00 [INF] The file /_framework/blazor.web.js was not modified
+2024-10-26 21:18:55.319 +05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7228/%20//fonts.googleapis.com/css2, Response status code: 404
+2024-10-26 21:18:55.323 +05:00 [INF] Executed endpoint 'Blazor web static files'
+2024-10-26 21:18:55.323 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-26 21:18:55.324 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/blazor.web.js - 304 null text/javascript 22.0522ms
+2024-10-26 21:18:55.327 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/ - 200 null text/html; charset=utf-8 1806.156ms
+2024-10-26 21:18:55.330 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_vs/browserLink - null null
+2024-10-26 21:18:55.336 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 12.1556ms
+2024-10-26 21:18:55.399 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.303ms
+2024-10-26 21:18:55.464 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7228/_blazor/initializers - null null
+2024-10-26 21:18:55.468 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-10-26 21:18:55.474 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-10-26 21:18:55.475 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7228/_blazor/initializers - 200 null application/json; charset=utf-8 10.611ms
+2024-10-26 21:18:55.492 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-10-26 21:18:55.497 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-10-26 21:18:55.506 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-10-26 21:18:55.507 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 15.3155ms
+2024-10-26 21:18:55.511 +05:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7228/_blazor?id=XNtMxtNB3jnx3ZtBZ1xjgQ - null null
+2024-10-26 21:18:55.515 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-10-26 21:18:55.699 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-10-26 21:18:55.702 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-10-26 21:18:58.926 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."LastLoginDate", "u"."LastName", "u"."LongAbsence", "u"."Name", "u"."Password"
+FROM "Users" AS "u"
+2024-10-26 21:19:05.384 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[@p6='?' (DbType = Int32), @p0='?' (Size = 13), @p1='?' (DbType = DateTime), @p2='?' (Size = 8), @p3='?' (DbType = Boolean), @p4='?' (Size = 4), @p5='?' (Size = 24)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "Email" = @p0, "LastLoginDate" = @p1, "LastName" = @p2, "LongAbsence" = @p3, "Name" = @p4, "Password" = @p5
+WHERE "Id" = @p6
+RETURNING 1;
+2024-10-26 21:19:05.398 +05:00 [INF] Выполнен вход в приложение под именем {Саня} c id {14}
+2024-10-26 21:19:05.441 +05:00 [INF] Сохранение имени и Id пользователя {Саня} в sessionStorage при авторизации
+2024-10-26 21:19:05.479 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."Login", "a"."Password", "a"."Source", "a"."UserId"
+FROM "Accounts" AS "a"
+2024-10-26 21:21:04.792 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7228/_blazor/disconnect - multipart/form-data; boundary=----WebKitFormBoundaryGjXj11wosqbV0gQM 359
+2024-10-26 21:21:04.797 +05:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-10-26 21:21:04.865 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-10-26 21:21:04.866 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7228/_blazor/disconnect - 200 0 null 74.5563ms
+2024-10-26 21:21:04.879 +05:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+2024-10-26 21:21:04.880 +05:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7228/_blazor?id=XNtMxtNB3jnx3ZtBZ1xjgQ - 200 null null 129369.0183ms
