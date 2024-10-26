@@ -12,8 +12,8 @@ namespace CourceProject.Components.Services
 
         public PassswordEncryptor(IOptions<CryptoString> options)
         {
-            key = Encoding.UTF8.GetBytes(options.Value.Key!);
-            iv = Encoding.UTF8.GetBytes(options.Value.Key!);
+             key = Encoding.UTF8.GetBytes(options.Value.Key!);
+             iv = Encoding.UTF8.GetBytes(options.Value.Key!);
         }
         public string Encrypt(string plainText)
         {

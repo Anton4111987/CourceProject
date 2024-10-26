@@ -64,6 +64,7 @@
                 user.LastLoginDate = DateTime.Now;
                 await _listUsers.UpdateUser(user);
                 toastService.ShowSuccess("Вы успешно авторизовались под пользователем '" +_userAuthorization.Name + "'");
+                logger.LogInformation("Выполнен вход в приложение под именем {" + _userAuthorization.Name + "} c id {" + _userId + "}"); 
                 await SaveLocalStorage();
                 logger.LogInformation("Сохранение имени и Id пользователя {" + _userAuthorization.Name + "} в sessionStorage при авторизации");
                 navigationManager.NavigateTo("/PasswordManager");
@@ -100,8 +101,6 @@
             {
                 user = new();                
                 user = userSearch;
-                // toastService.ShowInfo("Пользователь с таким именем и паролем найден в системе");
-                // logger.LogInformation("Пользователь с именем {" +userSearch.Name + "} найден в системе");
                 flag = true;
             }
         }
