@@ -12,7 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Blazor.Bootstrap" Version="3.1.0" />
     <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
+    <PackageReference Include="Blazored.Modal" Version="7.3.1" />
     <PackageReference Include="Blazored.SessionStorage" Version="2.4.0" />
     <PackageReference Include="Blazored.Toast" Version="4.1.0" />
     <PackageReference Include="MailKit" Version="4.6.0" />

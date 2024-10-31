@@ -6,6 +6,8 @@ using CourceProject.Components.Data;
 using CourceProject.Components.Services;
 using CourceProject.Components.Models;
 using Blazored.Toast;
+//using Blazored.Modal;
+using BlazorBootstrap;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -18,10 +20,12 @@ try
     var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+    builder.Services.AddBlazorBootstrap();
     builder.Services.AddBlazoredToast();
+    //builder.Services.AddBlazoredModal();
     builder.Logging.ClearProviders();
     builder.Logging.AddConsole();
-    builder.Host.UseSerilog(); // <-- Add this line
+    builder.Host.UseSerilog();
     builder.Services.AddOptions<CryptoString>()
     .BindConfiguration("CryptoString");
     builder.Services.AddBlazoredSessionStorage();
@@ -35,11 +39,9 @@ try
         options.UseSqlite(builder.Configuration.GetConnectionString("AppDb"));
     });
     var app = builder.Build();
-    // Configure the HTTP request pipeline.
     if (!app.Environment.IsDevelopment())
     {
         app.UseExceptionHandler("/Error", createScopeForErrors: true);
-        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
         app.UseHsts();
     }
     app.UseHttpsRedirection();
