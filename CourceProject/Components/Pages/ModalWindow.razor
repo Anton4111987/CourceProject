@@ -1,6 +1,6 @@
-﻿@using BlazorBootstrap;
+﻿﻿@using BlazorBootstrap;
 
-<Modal @ref="modal" title="Modal title" UseStaticBackdrop="true" CloseOnEscape="false">
+<Modal @ref="modal1" title="Modal title" UseStaticBackdrop="true" CloseOnEscape="false">
     <BodyTemplate>
         I will not close if you click outside me. Don't even try to press escape key.
     </BodyTemplate>
@@ -10,19 +10,24 @@
     </FooterTemplate>
 </Modal>
 
-<Button Color="ButtonColor.Primary" @onclick="OnShowModalClick">Launch static backdrop modal</Button>
+
+        <Button Color="ButtonColor.Primary" @onclick="OnShowModalClick">Launch static backdrop modal</Button>
+        <Button Color="ButtonColor.Danger" @onclick="OnShowModalClick">Launch static backdrop modal</Button>
+
+
+
 
 
 @code {
-    private Modal modal;
+    private Modal modal1;
 
     private async Task OnShowModalClick()
     {
-        await modal?.ShowAsync();
+        await modal1?.ShowAsync();
     }
 
     private async Task OnHideModalClick()
     {
-        await modal?.HideAsync();
+        await modal1?.HideAsync();
     }
 }
