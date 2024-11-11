@@ -12,7 +12,9 @@
 
 <h1 style="color:blueviolet; font-style:oblique" align="center">Confidant</h1>
 <p style="color:blueviolet; font-style:oblique" align="center"> Список доверенных лиц </p>
-<center>Доверенные лица служат для того чтобы получить логин и пароль пользователя если он отсутствовал в приложении более 183 дней </center>
+<center>
+    <h3>Доверенные лица служат для того чтобы получить логин и пароль пользователя если он отсутствовал в приложении более 183 дней  </h3>
+    </center>
 
 <br />
 <br />
@@ -25,13 +27,15 @@
     }
     else
     {
-        <p>@_pageTitle - "@_nameUser"</p>
-        <p>userId - "@_userId" </p>
-        <h1>Список доверенных лиц</h1>
+        <div class="userId" style="color:white; width:350px; background:#42AAFF">
+            <span> Вы вошли под пользователем - "@_nameUser"</span>
+            <br />
+            <span> userId - "@_userId" </span>
+        </div>
+        <h1 style="color:blueviolet; font-style:oblique" align="center">Список доверенных лиц</h1>
+
         <br />
-        <button class="btn btn-3" id="exit" @onclick="Exit">Выйти</button>
-        <br />
-        <table href="/confidant#tableElement" class="table">
+        <table href="/confidant#tableElement" class="table_dark">
             <thead>
                 <tr>
                     <th>Фамилия</th>
@@ -79,7 +83,8 @@
         </table>
         <br />
         <br />
-        <button class="btn btn-primary" id="add" @onclick="AddConfidant">Добавить новое доверенное лицо</button>
+        <button style="background:blue; width:400px" class="glow-on-hover" id="add" @onclick="AddConfidant">Добавить новое доверенное лицо</button>
+        <button style="background:black; float:inline-end" class="glow-on-hover" id="exit" @onclick="Exit">Выйти</button>
     }
 
     
