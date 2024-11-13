@@ -22,7 +22,6 @@ try
     .AddInteractiveServerComponents();
     builder.Services.AddBlazorBootstrap();
     builder.Services.AddBlazoredToast();
-    //builder.Services.AddBlazoredModal();
     builder.Logging.ClearProviders();
     builder.Logging.AddConsole();
     builder.Host.UseSerilog();

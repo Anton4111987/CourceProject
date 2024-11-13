@@ -13,47 +13,56 @@
 
 @rendermode InteractiveServer
 
-<h3 style ="color:blueviolet; font-style:oblique" align="center">@_pageTitle</h3>
-<br/>
-<div class="container-fluid">
-    <div class="col-md-4 offset-md-4" text-align="left">
-        <div class="form-container">
-            <div class="form-icon"><i class="fa fa-user"></i></div>
-            <h3 class="title">Registration</h3>
-            <EditForm Model="@_user" OnValidSubmit="AddUser" FormName="user_registration" class="form-horizontal">
-                <DataAnnotationsValidator />
-                <div class="form-group">
-                    <label>Имя пользователя</label>
-                    <InputText id="name" @bind-Value="@_user.Name" class="form-control" placeholder="Имя" />
-                </div>
-                <div class="form-group">
-                    <label>Фамилия пользователя</label>
-                    <InputText id="lastname" @bind-Value="@_user.LastName" class="form-control" placeholder="Фамилия" />
-                </div>
-                <div class="form-group">
-                    <label> Email пользователя</label>
-                    <InputText id="email" @bind-Value="@_user.Email" class="form-control" type="email" placeholder="Email" />
-                </div>
-                <div class="form-group">
-                    <label> Пароль пользователя</label>
-                    <InputText type="password" id="password" @bind-Value="@_user.Password" class="form-control" placeholder="Пароль" />
-                </div>
-                <div class="form-group">
-                    <label> Повтор Пароля пользователя</label>
-                    <InputText type="password" id="password" @bind-Value="@repeatPassword.Password" class="form-control" placeholder="Повторите пароль" />
-                </div>
-                <ValidationSummary />
-                <br />
-                <br /> <input type="submit" value="Добавить пользователя" class="btn btn-default">
-                <br />
-            </EditForm>
+@if (_nameUser == null)
+{
+    <h3 style="color:blueviolet; font-style:oblique" align="center">"Регистрация нового пользователя и добавление в базу"</h3>
+    <br />
+    <div class="container-fluid">
+        <div class="col-md-4 offset-md-4" text-align="left">
+            <div class="form-container">
+                <div class="form-icon"><i class="fa fa-user"></i></div>
+                <h3 class="title">Registration</h3>
+                <EditForm Model="@_user" OnValidSubmit="AddUser" FormName="user_registration" class="form-horizontal">
+                    <DataAnnotationsValidator />
+                    <div class="form-group">
+                        <label>Имя пользователя</label>
+                        <InputText id="name" @bind-Value="@_user.Name" class="form-control" placeholder="Имя" />
+                    </div>
+                    <div class="form-group">
+                        <label>Фамилия пользователя</label>
+                        <InputText id="lastname" @bind-Value="@_user.LastName" class="form-control" placeholder="Фамилия" />
+                    </div>
+                    <div class="form-group">
+                        <label> Email пользователя</label>
+                        <InputText id="email" @bind-Value="@_user.Email" class="form-control" type="email" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                        <label> Пароль пользователя</label>
+                        <InputText type="password" id="password" @bind-Value="@_user.Password" class="form-control" placeholder="Пароль" />
+                    </div>
+                    <div class="form-group">
+                        <label> Повтор Пароля пользователя</label>
+                        <InputText type="password" id="password" @bind-Value="@repeatPassword.Password" class="form-control" placeholder="Повторите пароль" />
+                    </div>
+                    <ValidationSummary />
+                    <br />
+                    <br /> <input type="submit" value="Добавить пользователя" class="btn btn-default">
+                    <br />
+                </EditForm>
+            </div>
         </div>
     </div>
-</div>
+}
+else
+{
+    navigationManager.NavigateTo("/PasswordManager");
+    toastService.ShowError("Вы уже зарегистрированы, для добавления нового пользователя требуется выход существующего!");
+}
+
+
 
 
 @code {
-    private string _pageTitle = "Регистрация нового пользователя и добавление в базу";
     private int? userId;
     private string? userName;
     private IEnumerable<User> users = new List<User>();
@@ -61,6 +70,9 @@
     private User _user { get; set; } = new();
     [SupplyParameterFromForm]
     private RepeatPassword repeatPassword { get; set; } = new();
+    private string? _nameUser;
+    private int? _userId;
+
 
     #region метод добавления нового пользователя в базу
     private async Task AddUser() // метод добавления нового пользователя в базу
@@ -122,5 +134,6 @@
     protected override async Task OnInitializedAsync()
     {
         users = await _listUsers.GetUsers();
+        _nameUser = await localStorage.GetItemAsync<string>("userName");
     }
 }

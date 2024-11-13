@@ -31,7 +31,7 @@
                         <DataAnnotationsValidator />
                         <div class="form-group">
                             <label>Имя пользователя</label>
-                            <InputText id="name" @bind-Value="@_changeUser.Name" class="form-control" placeholder="Имя" />
+                            <InputText id="name" @bind-Value="@_changeUser!.Name" class="form-control" placeholder="Имя" />
                         </div>
                         <div class="form-group">
                             <label>Фамилия пользователя</label>
@@ -73,21 +73,16 @@ else
         _user!.Name = await localStorage.GetItemAsync<string>("userName");
         _user.Id = await localStorage.GetItemAsync<int>("userId");
         _user = await _listUsers.GetUserById(_user!.Id);
-        _changeUser = (User)_user.Clone();
-        //_changeUser = _user;
-        //_changeUser.Password = _user.Password;
+        _changeUser = (User)_user!.Clone();
     }
 
     private async void SaveChanges() // метод изменения пароля пользователя
     {
         if(_user!=_changeUser)
         {
-            // _user = _changeUser;
-            //_user = (User)_changeUser.Clone();
-            _user.Name = _changeUser.Name;
+            _user!.Name = _changeUser!.Name;
             _user.LastName = _changeUser.LastName;
             _user.Email = _changeUser.Email;
-            //_changeUser = new();
             await _listUsers.UpdateUser(_user);
             logger.LogInformation("Обновление данных пользователя {" + _user.Name +" " + _user.LastName +"}");
             toastService.ShowSuccess("Данные пользователя успешно обновлены");
@@ -97,9 +92,6 @@ else
         {
             toastService.ShowSuccess("Изменений не зафиксировано");
         }
-
-        
-        
     }
     protected async override Task OnAfterRenderAsync(bool firstRender)
     {
@@ -110,5 +102,4 @@ else
             StateHasChanged();
         }
     }
-
 }

@@ -56,7 +56,7 @@
                         <td>@conf.Email</td>
                         <td>@conf.Number</td>
                         <td>
-                            <Button Color="Color.Danger" class="btn btn-2" id="delete" @onclick="(()=>DeleteConfidant(conf))">Удалить</Button>
+                            <button style="background:red" class="glow-on-hover" id="delete" @onclick="(()=>DeleteConfidant(conf))">Удалить</button>
                         </td>
                     </tr>
                 }
@@ -97,9 +97,7 @@
     private string? _nameUser;
     private IEnumerable<Confidant> confidants=new List<Confidant>();
     private Confidant _newConfidant = new();
-    //private int selectedNumber;
     private bool isConnected;
-    private bool checkedValue;
     protected override async Task OnInitializedAsync()
     {
         confidants = await _listConfidants.GetConfidants();

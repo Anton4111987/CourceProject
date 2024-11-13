@@ -13,33 +13,41 @@
 
 @rendermode InteractiveServer
 
-<h1 style="color:blueviolet; font-style:oblique" align="center">@_pageTitle</h1>
-<br/>
-<div class="container-fluid">
-    <div class="col-md-4 offset-md-4" text-align="left">
-        <div class="form-container">
-            <div class="form-icon"><i class="fa fa-user"></i></div>
-            <h3 class="title">Authorisation</h3>
-            <EditForm Model="@_userAuthorization" OnValidSubmit="UserAuthorization" FormName="user_authorization" class="form-horizontal">
-                <DataAnnotationsValidator />
-                <div class="form-group">
-                    <label>Имя пользователя</label>
-                    <InputText @bind-Value="_userAuthorization.Name" class="form-control" placeholder="Имя пользователя" />
-                </div>
-                <div class="form-group">
-                    <label>Пароль пользователя</label>
-                    <InputText type="password" @bind-Value="_userAuthorization.Password" class="form-control" placeholder="Пароль" />
-                </div>
-                
-                <ValidationSummary />
-                <br />
-                <br /> <input type="submit" value="Авторизоваться" class="btn btn-default">
-                <br />
-            </EditForm>
+@if (_nameUser == null)
+{
+    <h1 style="color:blueviolet; font-style:oblique" align="center">@_pageTitle</h1>
+    <br />
+    <div class="container-fluid">
+        <div class="col-md-4 offset-md-4" text-align="left">
+            <div class="form-container">
+                <div class="form-icon"><i class="fa fa-user"></i></div>
+                <h3 class="title">Authorisation</h3>
+                <EditForm Model="@_userAuthorization" OnValidSubmit="UserAuthorization" FormName="user_authorization" class="form-horizontal">
+                    <DataAnnotationsValidator />
+                    <div class="form-group">
+                        <label>Имя пользователя</label>
+                        <InputText @bind-Value="_userAuthorization.Name" class="form-control" placeholder="Имя пользователя" />
+                    </div>
+                    <div class="form-group">
+                        <label>Пароль пользователя</label>
+                        <InputText type="password" @bind-Value="_userAuthorization.Password" class="form-control" placeholder="Пароль" />
+                    </div>
+
+                    <ValidationSummary />
+                    <br />
+                    <br /> <input type="submit" value="Авторизоваться" class="btn btn-default">
+                    <br />
+                </EditForm>
+            </div>
         </div>
     </div>
-</div>
 
+}
+else
+{
+    navigationManager.NavigateTo("/PasswordManager");
+    toastService.ShowError("Вы уже авторизованы!");
+}
 
 @code {
     private string _pageTitle = "Авторизация пользователя";
@@ -49,9 +57,12 @@
     private string? decryptedPassword;
     [SupplyParameterFromForm]
     private UserAuthorization _userAuthorization { get; set; } = new();
+    private string? _nameUser;
+
     protected override async Task OnInitializedAsync()
     {
         users = await _listUsers.GetUsers();
+        _nameUser = await localStorage.GetItemAsync<string>("userName");
     }
     #region метод авторизации пользователя
     private async Task UserAuthorization() // метод авторизации пользователя
