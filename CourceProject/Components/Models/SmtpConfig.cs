@@ -53,7 +53,7 @@ namespace CourceProject.Components.Models
             }
             string? portString = Environment.GetEnvironmentVariable(port);
             Port = Convert.ToInt32(portString);
-            if (Port == null)
+            if (Port == 0)
             {
                 throw new InvalidOperationException($"Переменная среды окружения {port} не задана ");
             }

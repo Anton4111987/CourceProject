@@ -11,7 +11,7 @@ namespace CourceProject.Components.Services
 
         static public string Generate(int LengthPassword)
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new ();
             Random random = new();
             for (int j = 0; j < LengthPassword; j++)
             {

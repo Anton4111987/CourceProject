@@ -15,7 +15,7 @@ namespace CourceProject.Components.Services
              key = Encoding.UTF8.GetBytes(options.Value.Key!);
              iv = Encoding.UTF8.GetBytes(options.Value.Key!);
         }
-        public string Encrypt(string plainText)
+        public string Encrypt(string? plainText)
         {
             using (Aes aesAlg = Aes.Create())
             {
@@ -34,14 +34,14 @@ namespace CourceProject.Components.Services
             }
         }
 
-        public string Decrypt(string cipherText)
+        public string Decrypt(string? cipherText)
         {
             using (Aes aesAlg = Aes.Create())
             {
                 aesAlg.Key = key;
                 aesAlg.IV = iv;
                 ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
-                using (MemoryStream msDecrypt = new MemoryStream(Convert.FromBase64String(cipherText)))
+                using (MemoryStream msDecrypt = new MemoryStream(Convert.FromBase64String(cipherText!)))
                 using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
                 using (StreamReader srDecrypt = new StreamReader(csDecrypt))
                 {
