@@ -79,7 +79,9 @@
                         Name = _user.Name,
                         LastName = _user.LastName,
                         Email = _user.Email,
-                        Password = passwordEncryptor.Encrypt(_user.Password!)
+                        Password = passwordEncryptor.Encrypt(_user.Password!),
+                        LastLoginDate=DateTime.Now,
+                        LongAbsence=false
                     });
                 logger.LogInformation("Зарегистрирован новый пользователь {" + _user.Name+"}");
                 toastService.ShowSuccess("Новый пользователь " + _user.Name + " успешно зарегистрирован");

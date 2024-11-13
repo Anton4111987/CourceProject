@@ -38,8 +38,8 @@
                 var date1 = DateTime.Now;
                 var date2 = (DateTime)user.LastLoginDate; // получение даты последнего входа пользователей
                 TimeSpan result = date1.Subtract(date2); // результат разницы между date.now и последним входом пользователей
-                //if (result.TotalDays >= 183 && result.TotalDays<240) // если со дня последнего входа прошло более 183 суток
-                if (result.Minutes > 2 && user.LongAbsence == false)
+                                                         //if (result.TotalDays >= 183 && result.TotalDays<240) // если со дня последнего входа прошло более 183 суток
+                if (result.Minutes > 1 && user.LongAbsence == false)
                 {
                     _confidants = from confidant in await _listConfidants.GetConfidants() // получаем список доверенных лиц с помощью запроса sql
                                   where confidant.UserId == user.Id
@@ -61,10 +61,10 @@
                                                     "В случае, если вход не будет осуществлен в течении 60 календарных дней, данные пользователя " + user.Name + " " + user.LastName + " с Email: " + user.Email + "  будет удален из системы безвозвратно\n" +
                                                     "С уважением администрация приложения менеджера паролей!"
                                 };
-
-                            await Send(user); // добавить параметры пользователя для логирования в отправке
+                            await Send(user);
                         }
                         user.LongAbsence = true;
+                        await _listUsers.UpdateUser(user);
                     }
                 }
                 if (result.TotalDays > 243 && user.LongAbsence==true)
