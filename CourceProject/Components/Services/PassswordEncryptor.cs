@@ -5,12 +5,12 @@ using System.Text;
 
 namespace CourceProject.Components.Services
 {
-    public class PassswordEncryptor:IEncryptor
+    public class PasswordEncryptor:IEncryptor
     {
         private readonly byte[] key;
         private readonly byte[] iv;
 
-        public PassswordEncryptor(IOptions<CryptoString> options)
+        public PasswordEncryptor(IOptions<CryptoString> options)
         {
              key = Encoding.UTF8.GetBytes(options.Value.Key!);
              iv = Encoding.UTF8.GetBytes(options.Value.Key!);

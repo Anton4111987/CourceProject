@@ -29,7 +29,7 @@ try
     .BindConfiguration("CryptoString");
     builder.Services.AddBlazoredSessionStorage();
     builder.Services.AddScoped<IEmailSender>(sendMessage=>new SmtpEmailSender("AdministrationManagerPasswords"));
-    builder.Services.AddScoped<IEncryptor, PassswordEncryptor>();
+    builder.Services.AddScoped<IEncryptor, PasswordEncryptor>();
     builder.Services.AddScoped<IUserRepository, InDbSQLiteListUsers>();
     builder.Services.AddScoped<IAccountRepository, InDbSQLiteListAccounts>();
     builder.Services.AddScoped<IConfidantRepository, InDbSQLiteListConfidants>();

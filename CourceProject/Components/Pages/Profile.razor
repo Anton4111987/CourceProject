@@ -73,7 +73,8 @@ else
         _user!.Name = await localStorage.GetItemAsync<string>("userName");
         _user.Id = await localStorage.GetItemAsync<int>("userId");
         _user = await _listUsers.GetUserById(_user!.Id);
-        _changeUser = (User)_user!.Clone();
+        if(_user!= null)
+            _changeUser = (User)_user!.Clone();
     }
 
     private async void SaveChanges() // метод изменения пароля пользователя
