@@ -2,6 +2,7 @@
 using System.Security.Cryptography;
 using CourceProject.Components.Models;
 using System.Text;
+using System.Globalization;
 
 namespace CourceProject.Components.Services
 {
@@ -12,8 +13,16 @@ namespace CourceProject.Components.Services
 
         public PasswordEncryptor(IOptions<CryptoString> options)
         {
-             key = Encoding.UTF8.GetBytes(options.Value.Key!);
-             iv = Encoding.UTF8.GetBytes(options.Value.Key!);
+            key = Encoding.UTF8.GetBytes(options.Value.Key!);
+            iv = Encoding.UTF8.GetBytes(options.Value.Key!);
+        }
+        public PasswordEncryptor(string Key, string Iv)
+        {
+
+            var Ke = Encoding.Default.GetChars(Encoding.Default.GetBytes(Key));
+            var i = Encoding.Default.GetChars(Encoding.Default.GetBytes(Iv));
+            this.key =Encoding.UTF8.GetBytes(Ke);
+            this.iv = Encoding.UTF8.GetBytes(i);
         }
         public string Encrypt(string? plainText)
         {

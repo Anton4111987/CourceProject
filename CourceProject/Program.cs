@@ -6,8 +6,6 @@ using CourceProject.Components.Data;
 using CourceProject.Components.Services;
 using CourceProject.Components.Models;
 using Blazored.Toast;
-//using Blazored.Modal;
-using BlazorBootstrap;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
