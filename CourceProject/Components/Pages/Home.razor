@@ -44,7 +44,7 @@
                     _confidants = from confidant in await _listConfidants.GetConfidants() // получаем список доверенных лиц с помощью запроса sql
                                   where confidant.UserId == user.Id
                                   select confidant;
-                    if (_confidants!=null)
+                    if (_confidants.Count()>0)
                     {
                         foreach (Confidant conf in _confidants)
                         {
