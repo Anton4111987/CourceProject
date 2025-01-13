@@ -7,6 +7,7 @@ using CourceProject.Components.Services;
 using CourceProject.Components.Models;
 using Blazored.Toast;
 
+
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("log.txt")
